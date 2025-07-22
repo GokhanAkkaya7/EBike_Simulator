@@ -1,0 +1,40 @@
+﻿  Data_Distributor.c
+  driver_test_app.c
+  her2_adc_fw.c
+  cJSON.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw.c(46,3): warning C4013: 'printf' undefined; assuming extern returning int
+  Data_Handler.c
+  her2_adc_fw_test.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw_test.c(23,2): warning C4013: 'printf' undefined; assuming extern returning int
+  her2_can_drv.c
+  her2_can_drv_test.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_can_drv_test.c(61,14): warning C4552: '!=': result of expression not used
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_can_drv_test.c(76,2): warning C4013: 'printf' undefined; assuming extern returning int
+  her2_irq_drv.c
+  her2_irq_drv_test.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_irq_drv_test.c(65,2): warning C4013: 'printf' undefined; assuming extern returning int
+  Json.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(71,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(80,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(159,65): warning C4047: 'function': 'const cJSON_bool' differs in levels of indirection from 'uint16_t [256]'
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(159,65): warning C4024: 'cJSON_AddBoolToObject': different types for formal and actual parameter 3
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(165,65): warning C4047: 'function': 'const cJSON_bool' differs in levels of indirection from 'uint16_t [8]'
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(165,65): warning C4024: 'cJSON_AddBoolToObject': different types for formal and actual parameter 3
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(190,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  brain_thread.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(166,2): warning C4113: 'void (__cdecl *)(void)' differs in parameter lists from 'void (__cdecl *)(ULONG)'
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(187,3): warning C4013: 'test_app_init' undefined; assuming extern returning int
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(212,5): warning C4013: 'test_app_main' undefined; assuming extern returning int
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(260,10): warning C4101: 'status': unreferenced local variable
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(270,10): warning C4101: 'status': unreferenced local variable
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(281,10): warning C4101: 'status': unreferenced local variable
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(291,10): warning C4101: 'status': unreferenced local variable
+  Pipe_Connection.c
+  Generating Code...
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw.c(96,1): warning C4715: 'adc0_fw_stop': not all control paths return a value
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw.c(58,1): warning C4715: 'adc0_fw_open': not all control paths return a value
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw.c(77,1): warning C4715: 'adc0_fw_start': not all control paths return a value
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw.c(39,1): warning C4716: 'adc0_fw_configure': must return a value
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw.c(115,1): warning C4715: 'adc0_fw_close': not all control paths return a value
+     Creating library .\Debug\Battery_Simulator.lib and object .\Debug\Battery_Simulator.exp
+  Battery_Simulator.vcxproj -> C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Debug\Battery_Simulator.exe

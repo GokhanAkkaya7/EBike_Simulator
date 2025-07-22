@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\brain_thread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\brain_thread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GOKHANAKK\\source\\repos\\Rtos_Comm\\Rtos_Comm\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "brain_thread.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\brain_thread.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\brain_thread.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\brain_thread.c",
+              "RelativeToolTip": "Battery_Simulator\\brain_thread.c",
+              "ViewState": "AgIAADgAAAAAAAAAAAAvwEYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-07-22T05:49:10.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\source\\repos\\Rtos_Comm\\Rtos_Comm\\App.config",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\source\\repos\\Rtos_Comm\\Rtos_Comm\\App.config",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\source\\repos\\Rtos_Comm\\Rtos_Comm\\App.config",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\source\\repos\\Rtos_Comm\\Rtos_Comm\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-10T08:20:39.126Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

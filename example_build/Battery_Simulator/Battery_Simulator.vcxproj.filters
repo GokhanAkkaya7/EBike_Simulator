@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="brain_thread.c" />
+    <ClCompile Include="Pipe_Connection.c">
+      <Filter>src\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Json.c">
+      <Filter>src\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="cJSON.c">
+      <Filter>src\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Data_Handler.c">
+      <Filter>src\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Data_Distributor.c">
+      <Filter>src\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_adc_fw.c">
+      <Filter>src\Driver\ADC</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_adc_fw_test.c">
+      <Filter>src\Driver\ADC</Filter>
+    </ClCompile>
+    <ClCompile Include="driver_test_app.c">
+      <Filter>src\Driver\APP</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_can_drv.c">
+      <Filter>src\Driver\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_can_drv_test.c">
+      <Filter>src\Driver\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_irq_drv.c">
+      <Filter>src\Driver\IRQ</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_irq_drv_test.c">
+      <Filter>src\Driver\IRQ</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\common\inc\tx_api.h">
+      <Filter>inc\ThreadX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\tx_port.h">
+      <Filter>inc\ThreadX</Filter>
+    </ClInclude>
+    <ClInclude Include="config_simulator.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_project_settings.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe_Connection.h">
+      <Filter>inc\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Json.h">
+      <Filter>inc\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="cJSON.h">
+      <Filter>inc\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Data_Handler.h">
+      <Filter>inc\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_adc_fw.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Data_Distributor.h">
+      <Filter>inc\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="driver_api.h">
+      <Filter>inc\Driver_api</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_adc_fw.h">
+      <Filter>inc\Driver\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="driver_test_app.h">
+      <Filter>inc\Driver\APP</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_adc_fw_test.h">
+      <Filter>inc\Driver\ADC</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_canbus_drv.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_can_drv.h">
+      <Filter>inc\Driver\CANBUS</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_can_drv_test.h">
+      <Filter>inc\Driver\CANBUS</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_irq_drv_test.h">
+      <Filter>inc\Driver\IRQ</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_irq_drv.h">
+      <Filter>inc\Driver\IRQ</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_irq_drv.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{503dc448-1f50-4ecb-8a9f-bae3a4312d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{fb54535b-0368-4b93-ba30-d3665b85e7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\ThreadX">
+      <UniqueIdentifier>{c330ca9c-179e-425b-a754-db1effae899b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Library">
+      <UniqueIdentifier>{c7360214-3158-4f86-8a5a-fef5bd463352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Library">
+      <UniqueIdentifier>{aa611e25-caa6-495c-82c8-e088e4330303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver">
+      <UniqueIdentifier>{3456ac4b-631f-45ad-a1c0-9a97bd7c2f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Configuration">
+      <UniqueIdentifier>{34a52221-0a5d-4ab4-88ae-ae687d8742c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Application">
+      <UniqueIdentifier>{ef37189c-5eb1-4e71-a5da-3b023db120f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application">
+      <UniqueIdentifier>{891c3a33-35fa-4edf-a637-54ebb65c2277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver">
+      <UniqueIdentifier>{145d569e-9b83-437a-a1cd-d0c606651db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver_api">
+      <UniqueIdentifier>{78274d80-9171-41d8-b7c1-493377bd5dc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\ADC">
+      <UniqueIdentifier>{cc33b025-d7a2-43c0-a9aa-5f1befe679b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\APP">
+      <UniqueIdentifier>{8920153f-6660-4d9d-bf04-01a3309dcdc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\ADC">
+      <UniqueIdentifier>{6eb6c147-2304-4651-bbb5-520c0ae60538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\APP">
+      <UniqueIdentifier>{1b69d4a6-f80d-4ee5-878b-654726df0180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\CANBUS">
+      <UniqueIdentifier>{b86be91b-ea80-493e-bf34-884559747efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\CAN">
+      <UniqueIdentifier>{361000a8-d166-4061-b9d5-15af8023d01c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\IRQ">
+      <UniqueIdentifier>{952f9e8c-03ed-46d8-85b6-599c051e04b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\IRQ">
+      <UniqueIdentifier>{c28d2a21-2838-4e15-a03e-655d010faf70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
