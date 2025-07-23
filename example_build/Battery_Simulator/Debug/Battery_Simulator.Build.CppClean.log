@@ -1,38 +1,21 @@
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\vc143.pdb
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\pipe_connection.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\brain_thread.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\json.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_irq_drv_test.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_irq_drv.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_can_drv_test.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_can_drv.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_adc_fw_test.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\data_handler.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\cjson.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_adc_fw.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\driver_test_app.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\data_distributor.obj
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.exe
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.pdb
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.lib
-c:\d_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.exp
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\brain_thread.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\cjson.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\data_distributor.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\data_handler.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\driver_test_app.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_adc_fw.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_adc_fw_test.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_can_drv.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_can_drv_test.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_irq_drv.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_irq_drv_test.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\json.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\pipe_connection.obj
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.exp
-c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.pdb
 c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\vc143.pdb
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\pipe_connection.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\brain_thread.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\json.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_irq_drv_test.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_irq_drv.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_can_drv_test.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_can_drv.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_adc_fw_test.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\data_handler.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\cjson.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\her2_adc_fw.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\driver_test_app.obj
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\data_distributor.obj
 c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.exe
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.pdb
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.lib
+c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_simulator.exp
 c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_.7342deef.tlog\cl.command.1.tlog
 c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_.7342deef.tlog\cl.items.tlog
 c:\users\gokhanakk\documents\visual studio 2022\projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\battery_simulator\debug\battery_.7342deef.tlog\cl.read.1.tlog
