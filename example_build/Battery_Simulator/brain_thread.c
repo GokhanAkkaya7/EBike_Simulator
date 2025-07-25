@@ -9,8 +9,10 @@
 #include	"her2_adc_fw.h"
 #include	"her2_can_drv.h"
 #include	"her2_irq_drv.h"
+#include	"her2_gpt_drv.h"
 #include	"tx_api.h"
 #include	"stdio.h"
+#include	"her2_gpt_drv_test.h"
 
 #define     DEMO_STACK_SIZE				2048
 #define     DEMO_BYTE_POOL_SIZE			32768
@@ -224,7 +226,7 @@ void    thread_1_entry(ULONG thread_input)
 	while (1)
 
 	{
-		status = tx_event_flags_get(&timer_events, INTERRUPT_EVENT, TX_OR_CLEAR,
+		status = tx_event_flags_get(&timer_events, INTERRUPT_EVENT | GPT_RECEIVE_EVENT, TX_OR_CLEAR,
 			&tmr_events.u32byte, THREAD_LOOP_TIMEOUT);
 		if (tmr_events.bits.interrupt_event)
 		{
@@ -232,6 +234,14 @@ void    thread_1_entry(ULONG thread_input)
 			get_main_data(&main_irq_data, DRIVER_IRQ);
 			// TODO GA: Distribute callbacks in other way.
 			IRQ_CALLBACK(&main_irq_data.data.irq);
+		}
+		if (tmr_events.bits.gpt_receive_event)
+		{
+			Message main_gpt_data = { 0 };
+			get_main_data(&main_gpt_data, DRIVER_GPT);
+			GPT_DATA_RECEIVE(&main_gpt_data.data.gpt);
+			gpt_test_main();
+			// TODO GA: Distribute callbacks in other way.
 		}
 	}
 }

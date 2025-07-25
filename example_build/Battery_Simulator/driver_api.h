@@ -3,6 +3,26 @@
 #include "conf_project_settings.h"
 #include "config_simulator.h"
 
+typedef enum
+{
+	Unknown_unit = 0,
+	Seconds,
+	Milliseconds,
+	Microseconds,
+	Hertz
+}GptUnit_e;
+
+typedef enum
+{
+	DRIVER_ADC = 0,
+	DRIVER_UART,
+	DRIVER_IO,
+	DRIVER_IRQ,
+	DRIVER_CAN,
+	DRIVER_GPT,
+	DRIVER_UNKNOWN
+} DriverType_e;
+
 typedef struct
 {
 	int index;
@@ -35,15 +55,14 @@ typedef struct
 	uint16_t can_buffer[8]; // 0 or 1
 } CanData;
 
-typedef enum
+typedef struct
 {
-	DRIVER_ADC = 0,
-	DRIVER_UART,
-	DRIVER_IO,
-	DRIVER_IRQ,
-	DRIVER_CAN,
-	DRIVER_UNKNOWN
-} DriverType_e;
+	int channel_count;
+	int Channel[12];
+	int Period[12];
+	GptUnit_e Unit[12];
+
+} GptData;
 
 typedef struct
 {
@@ -55,5 +74,6 @@ typedef struct
 		IoData io;
 		IrqData irq;
 		CanData can;
+		GptData gpt;
 	} data;
 } Message;

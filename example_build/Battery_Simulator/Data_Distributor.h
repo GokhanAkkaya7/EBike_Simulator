@@ -10,19 +10,21 @@
 #define TIME_500MSEC_EVENT                  0x20
 #define TIME_SEC_EVENT                      0x40
 #define INTERRUPT_EVENT						0x80
+#define GPT_RECEIVE_EVENT					0x100
 
 typedef union
 {
 	struct
 	{
-		uint32_t time_10msec_event : 1;
-		uint32_t time_20msec_event : 1;
-		uint32_t time_50msec_event : 1;
+		uint32_t time_10msec_event	: 1;
+		uint32_t time_20msec_event	: 1;
+		uint32_t time_50msec_event	: 1;
 		uint32_t time_100msec_event : 1;
 		uint32_t time_250msec_event : 1;
 		uint32_t time_500msec_event : 1;
-		uint32_t time_sec_event : 1;
-		uint32_t interrupt_event : 1;
+		uint32_t time_sec_event		: 1;
+		uint32_t interrupt_event	: 1;
+		uint32_t gpt_receive_event	: 1;
 	}bits;
 	uint32_t u32byte;
 }timer_events_t;

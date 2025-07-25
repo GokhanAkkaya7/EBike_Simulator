@@ -16,6 +16,8 @@ DriverType_e get_driver_type(const char* driver_str)
 		return DRIVER_IRQ;
 	if (strcmp(driver_str, "can") == 0)
 		return DRIVER_CAN;
+	if (strcmp(driver_str, "gpt") == 0)
+		return DRIVER_GPT;
 	return DRIVER_UNKNOWN;
 }
 
@@ -111,6 +113,22 @@ void parser_json(const char* json_str, Message* messages, int* message_count)
 			{
 				messages[i].data.can.can_buffer[j] = cJSON_GetArrayItem(buffer, j)->valueint;
 			}
+			break;
+		}
+		case DRIVER_GPT:
+		{
+			cJSON* channel_count = cJSON_GetObjectItem(data, "channel_count");
+			cJSON* Channel = cJSON_GetObjectItem(data, "Channel");
+			cJSON* Period = cJSON_GetObjectItem(data, "Period");
+			cJSON* Unit = cJSON_GetObjectItem(data, "Unit");
+			messages[i].data.gpt.channel_count = channel_count->valueint;
+			for (int j = 0; j < channel_count->valueint; j++)
+			{
+				messages[i].data.gpt.Channel[j] = cJSON_GetArrayItem(Channel, j)->valueint;
+				messages[i].data.gpt.Period[j] = cJSON_GetArrayItem(Period, j)->valueint;
+				messages[i].data.gpt.Unit[j] = cJSON_GetArrayItem(Unit, j)->valueint;
+			}
+			tx_event_flags_set(&timer_events, GPT_RECEIVE_EVENT, TX_OR);
 			break;
 		}
 		default:

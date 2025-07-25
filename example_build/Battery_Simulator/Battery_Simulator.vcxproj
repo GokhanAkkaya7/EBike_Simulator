@@ -132,6 +132,7 @@
     <ClInclude Include="..\..\inc\tx_port.h" />
     <ClInclude Include="conf_adc_fw.h" />
     <ClInclude Include="conf_canbus_drv.h" />
+    <ClInclude Include="conf_gpt_drv.h" />
     <ClInclude Include="conf_irq_drv.h" />
     <ClInclude Include="Data_Distributor.h" />
     <ClInclude Include="driver_api.h" />
@@ -144,6 +145,8 @@
     <ClInclude Include="her2_adc_fw_test.h" />
     <ClInclude Include="her2_can_drv.h" />
     <ClInclude Include="her2_can_drv_test.h" />
+    <ClInclude Include="her2_gpt_drv.h" />
+    <ClInclude Include="her2_gpt_drv_test.h" />
     <ClInclude Include="her2_irq_drv.h" />
     <ClInclude Include="her2_irq_drv_test.h" />
     <ClInclude Include="Json.h" />
@@ -158,6 +161,8 @@
     <ClCompile Include="her2_adc_fw_test.c" />
     <ClCompile Include="her2_can_drv.c" />
     <ClCompile Include="her2_can_drv_test.c" />
+    <ClCompile Include="her2_gpt_drv.c" />
+    <ClCompile Include="her2_gpt_drv_test.c" />
     <ClCompile Include="her2_irq_drv.c" />
     <ClCompile Include="her2_irq_drv_test.c" />
     <ClCompile Include="Json.c" />

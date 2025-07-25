@@ -38,6 +38,12 @@
     <ClCompile Include="her2_irq_drv_test.c">
       <Filter>src\Driver\IRQ</Filter>
     </ClCompile>
+    <ClCompile Include="her2_gpt_drv.c">
+      <Filter>src\Driver\GPT</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_gpt_drv_test.c">
+      <Filter>src\Driver\GPT</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\common\inc\tx_api.h">
@@ -100,6 +106,15 @@
     <ClInclude Include="conf_irq_drv.h">
       <Filter>inc\Configuration</Filter>
     </ClInclude>
+    <ClInclude Include="conf_gpt_drv.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_gpt_drv.h">
+      <Filter>inc\Driver\GPT</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_gpt_drv_test.h">
+      <Filter>inc\Driver\GPT</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="inc">
@@ -158,6 +173,12 @@
     </Filter>
     <Filter Include="inc\Driver\IRQ">
       <UniqueIdentifier>{c28d2a21-2838-4e15-a03e-655d010faf70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\GPT">
+      <UniqueIdentifier>{df56c774-ce70-4ce3-a514-4912f17f7745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\GPT">
+      <UniqueIdentifier>{318b297c-391a-4211-a0ab-018cc13e5651}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

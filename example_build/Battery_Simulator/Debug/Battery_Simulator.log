@@ -1,4 +1,17 @@
-﻿  her2_adc_fw_test.c
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_adc_fw_test.c(28,2): warning C4013: 'printf' undefined; assuming extern returning int
+﻿  brain_thread.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(168,2): warning C4113: 'void (__cdecl *)(void)' differs in parameter lists from 'void (__cdecl *)(ULONG)'
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(189,3): warning C4013: 'test_app_init' undefined; assuming extern returning int
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(214,5): warning C4013: 'test_app_main' undefined; assuming extern returning int
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(270,10): warning C4101: 'status': unreferenced local variable
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(280,10): warning C4101: 'status': unreferenced local variable
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(291,10): warning C4101: 'status': unreferenced local variable
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(301,10): warning C4101: 'status': unreferenced local variable
+  her2_gpt_drv.c
+  her2_gpt_drv_test.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_gpt_drv_test.c(66,6): warning C4142: 'gpt_test_init': benign redefinition of type
+      C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_gpt_drv_test.h(15,6):
+      see declaration of 'gpt_test_init'
+  
+  Generating Code...
      Creating library .\Debug\Battery_Simulator.lib and object .\Debug\Battery_Simulator.exp
   Battery_Simulator.vcxproj -> C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Debug\Battery_Simulator.exe

@@ -3,6 +3,7 @@
 #include "her2_adc_fw_test.h"
 #include "her2_can_drv_test.h"
 #include "her2_irq_drv_test.h"
+#include "her2_gpt_drv_test.h"
 
 #if(APP_TEST)
 
@@ -24,6 +25,12 @@ void test_app_init(void)
 #if(IRQ_TEST)
 
 	irq_test_init();
+
+#endif
+
+#if(GPT_TEST)
+
+	gpt_test_init();
 
 #endif
 

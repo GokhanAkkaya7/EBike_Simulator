@@ -29,12 +29,17 @@
 #define ADC_FW                              1
 #define CANBUS_DRV                          1
 #define IRQ_DRV                             1
+#define GPT_DRV                             1
+#define IO_DRV                              1
 
 // APP Settings.
 #define APP_TEST                            1
 #define ADC_TEST                            1
 #define CANBUS_TEST                         1
 #define IRQ_TEST                            1
+#define GPT_TEST                            1
+#define IO_TEST                             1
+
 
 
 /*----------------------------- Public Typedef Definitions -------------------------------*/
