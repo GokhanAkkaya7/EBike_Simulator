@@ -5,6 +5,11 @@
 
 typedef enum
 {
+	APP_IO_LEVEL_LOW = 0, APP_IO_LEVEL_HIGH
+} app_io_level_t;
+
+typedef enum
+{
 	Unknown_unit = 0,
 	Seconds,
 	Milliseconds,
@@ -37,8 +42,8 @@ typedef struct
 
 typedef struct
 {
-	int pin;
-	int state; // 0 or 1
+	uint16_t pin;
+	app_io_level_t state; // 0 or 1
 } IoData;
 
 typedef struct
@@ -52,7 +57,7 @@ typedef struct
 {
 	uint32_t id;
 	int dlc;
-	uint16_t can_buffer[8]; // 0 or 1
+	uint16_t can_buffer[8];
 } CanData;
 
 typedef struct

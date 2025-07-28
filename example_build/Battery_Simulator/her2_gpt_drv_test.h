@@ -12,7 +12,7 @@
 
 /*----------------------------- Public Function Prototypes -------------------------------*/
 
-void gpt_test_init(void);
+bool gpt_test_init(void);
 void gpt_test_main(void);
 
 #endif

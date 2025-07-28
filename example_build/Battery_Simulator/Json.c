@@ -88,6 +88,7 @@ void parser_json(const char* json_str, Message* messages, int* message_count)
 			cJSON* state = cJSON_GetObjectItem(data, "state");
 			messages[i].data.io.pin = pin->valueint;
 			messages[i].data.io.state = state->valueint;
+			tx_event_flags_set(&timer_events, IO_RECEIVE_EVENT, TX_OR);
 			break;
 		}
 		case DRIVER_IRQ:

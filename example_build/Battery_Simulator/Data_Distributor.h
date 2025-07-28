@@ -11,6 +11,7 @@
 #define TIME_SEC_EVENT                      0x40
 #define INTERRUPT_EVENT						0x80
 #define GPT_RECEIVE_EVENT					0x100
+#define IO_RECEIVE_EVENT					0x200
 
 typedef union
 {
@@ -25,6 +26,7 @@ typedef union
 		uint32_t time_sec_event		: 1;
 		uint32_t interrupt_event	: 1;
 		uint32_t gpt_receive_event	: 1;
+		uint32_t io_receive_event	: 1;
 	}bits;
 	uint32_t u32byte;
 }timer_events_t;

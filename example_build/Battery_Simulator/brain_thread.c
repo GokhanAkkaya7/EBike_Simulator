@@ -226,7 +226,7 @@ void    thread_1_entry(ULONG thread_input)
 	while (1)
 
 	{
-		status = tx_event_flags_get(&timer_events, INTERRUPT_EVENT | GPT_RECEIVE_EVENT, TX_OR_CLEAR,
+		status = tx_event_flags_get(&timer_events, INTERRUPT_EVENT | GPT_RECEIVE_EVENT | IO_RECEIVE_EVENT, TX_OR_CLEAR,
 			&tmr_events.u32byte, THREAD_LOOP_TIMEOUT);
 		if (tmr_events.bits.interrupt_event)
 		{
@@ -240,7 +240,13 @@ void    thread_1_entry(ULONG thread_input)
 			Message main_gpt_data = { 0 };
 			get_main_data(&main_gpt_data, DRIVER_GPT);
 			GPT_DATA_RECEIVE(&main_gpt_data.data.gpt);
-			gpt_test_main();
+			// TODO GA: Distribute callbacks in other way.
+		}
+		if (tmr_events.bits.io_receive_event)
+		{
+			Message main_io_data = { 0 };
+			get_main_data(&main_io_data, DRIVER_IO);
+			IO_DATAHANDLER(&main_io_data.data.io);
 			// TODO GA: Distribute callbacks in other way.
 		}
 	}

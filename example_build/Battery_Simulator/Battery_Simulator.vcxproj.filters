@@ -44,6 +44,12 @@
     <ClCompile Include="her2_gpt_drv_test.c">
       <Filter>src\Driver\GPT</Filter>
     </ClCompile>
+    <ClCompile Include="her2_io_drv.c">
+      <Filter>src\Driver\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_io_drv_test.c">
+      <Filter>src\Driver\IO</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\common\inc\tx_api.h">
@@ -115,6 +121,15 @@
     <ClInclude Include="her2_gpt_drv_test.h">
       <Filter>inc\Driver\GPT</Filter>
     </ClInclude>
+    <ClInclude Include="conf_ioport_drv.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_io_drv.h">
+      <Filter>inc\Driver\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_io_drv_test.h">
+      <Filter>inc\Driver\IO</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="inc">
@@ -179,6 +194,12 @@
     </Filter>
     <Filter Include="src\Driver\GPT">
       <UniqueIdentifier>{318b297c-391a-4211-a0ab-018cc13e5651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\IO">
+      <UniqueIdentifier>{1e898072-cf66-47fa-b2b1-2cb5254b79d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\IO">
+      <UniqueIdentifier>{6e7ef021-16cc-4d82-a9a8-297f7259bb00}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -4,6 +4,7 @@
 #include "her2_can_drv_test.h"
 #include "her2_irq_drv_test.h"
 #include "her2_gpt_drv_test.h"
+#include "her2_io_drv_test.h"
 
 #if(APP_TEST)
 
@@ -31,9 +32,16 @@ void test_app_init(void)
 #if(GPT_TEST)
 
 	gpt_test_init();
+	gpt_test_main();
 
 #endif
 
+#if(IO_TEST)
+
+	io_test_init();
+	io_test_main();
+
+#endif
 }
 
 void test_app_main(void)
