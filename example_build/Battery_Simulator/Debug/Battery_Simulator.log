@@ -1,23 +1,4 @@
-﻿  Data_Distributor.c
-  Json.c
-  brain_thread.c
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(73,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(82,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(178,65): warning C4047: 'function': 'const cJSON_bool' differs in levels of indirection from 'uint16_t [256]'
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(178,65): warning C4024: 'cJSON_AddBoolToObject': different types for formal and actual parameter 3
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(184,65): warning C4047: 'function': 'const cJSON_bool' differs in levels of indirection from 'uint16_t [8]'
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(184,65): warning C4024: 'cJSON_AddBoolToObject': different types for formal and actual parameter 3
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Json.c(209,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(168,2): warning C4113: 'void (__cdecl *)(void)' differs in parameter lists from 'void (__cdecl *)(ULONG)'
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(189,3): warning C4013: 'test_app_init' undefined; assuming extern returning int
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(214,5): warning C4013: 'test_app_main' undefined; assuming extern returning int
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(249,4): warning C4013: 'IO_DATAHANDLER' undefined; assuming extern returning int
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(276,10): warning C4101: 'status': unreferenced local variable
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(286,10): warning C4101: 'status': unreferenced local variable
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(297,10): warning C4101: 'status': unreferenced local variable
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\brain_thread.c(307,10): warning C4101: 'status': unreferenced local variable
-  her2_io_drv.c
-  her2_io_drv_test.c
-  Generating Code...
+﻿  her2_mx25_spi_fw.c
+C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\her2_mx25_spi_fw.c(58,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
      Creating library .\Debug\Battery_Simulator.lib and object .\Debug\Battery_Simulator.exp
   Battery_Simulator.vcxproj -> C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Debug\Battery_Simulator.exe

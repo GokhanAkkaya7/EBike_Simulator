@@ -35,7 +35,10 @@ app_err_t adc0_fw_configure(void (*p_adc_event)(uint8_t, uint16_t*))
 {
 	adc0_event = p_adc_event;
 
-	tx_mutex_create(&adc_mutex, "adc_mutex is created", TX_INHERIT);
+	if (TX_SUCCESS == tx_mutex_create(&adc_mutex, "adc_mutex is created", TX_INHERIT))
+		return APP_SUCCESS;
+	else
+		return APP_ERR_THREADX;
 }
 
 app_err_t adc0_fw_open(void)
@@ -48,6 +51,7 @@ app_err_t adc0_fw_open(void)
 	}
 
 	// TODO GA;
+	app_err_t result = APP_SUCCESS;
 
 	tx_mutex_put(&adc_mutex);
 	if (TX_SUCCESS != tx_res)
@@ -55,6 +59,8 @@ app_err_t adc0_fw_open(void)
 		printf("adc0_fw_open: unexpected error happened on ThreadX side. Error code: %d", tx_res);
 		return APP_ERR_THREADX;
 	}
+
+	return result;
 }
 
 app_err_t adc0_fw_start(void)
@@ -67,6 +73,7 @@ app_err_t adc0_fw_start(void)
 	}
 
 	// TODO GA;
+	app_err_t result = APP_SUCCESS;
 
 	tx_mutex_put(&adc_mutex);
 	if (TX_SUCCESS != tx_res)
@@ -74,6 +81,8 @@ app_err_t adc0_fw_start(void)
 		printf("adc0_fw_open: unexpected error happened on ThreadX side. Error code: %d", tx_res);
 		return APP_ERR_THREADX;
 	}
+
+	return result;
 }
 
 app_err_t adc0_fw_stop(void)
@@ -86,6 +95,7 @@ app_err_t adc0_fw_stop(void)
 	}
 
 	// TODO GA;
+	app_err_t result = APP_SUCCESS;
 
 	tx_mutex_put(&adc_mutex);
 	if (TX_SUCCESS != tx_res)
@@ -93,6 +103,8 @@ app_err_t adc0_fw_stop(void)
 		printf("adc0_fw_open: unexpected error happened on ThreadX side. Error code: %d", tx_res);
 		return APP_ERR_THREADX;
 	}
+
+	return result;
 }
 
 app_err_t adc0_fw_close(void)
@@ -106,12 +118,17 @@ app_err_t adc0_fw_close(void)
 
 	// TODO GA;
 
+	app_err_t result = APP_SUCCESS;
+
+
 	tx_mutex_put(&adc_mutex);
 	if (TX_SUCCESS != tx_res)
 	{
 		printf("adc0_fw_open: unexpected error happened on ThreadX side. Error code: %d", tx_res);
 		return APP_ERR_THREADX;
 	}
+
+	return result;
 }
 
 /******************************************************************************************

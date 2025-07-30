@@ -12,7 +12,7 @@
 #include	"her2_gpt_drv.h"
 #include	"tx_api.h"
 #include	"stdio.h"
-#include	"her2_gpt_drv_test.h"
+#include	"driver_test_app.h"
 
 #define     DEMO_STACK_SIZE				2048
 #define     DEMO_BYTE_POOL_SIZE			32768
@@ -186,7 +186,9 @@ void    thread_0_entry(ULONG thread_input)
 		UINT    status;
 		timer_events_t tmr_events;
 
+#if(APP_TEST)
 		test_app_init();
+#endif
 
 		while (1)
 		{
@@ -211,7 +213,9 @@ void    thread_0_entry(ULONG thread_input)
 			}
 			if (tmr_events.bits.time_100msec_event)
 			{
+#if(APP_TEST)
 				test_app_main();
+#endif
 			}
 		}
 	}
@@ -273,8 +277,6 @@ void    thread_3_entry(ULONG thread_input)
 
 void    thread_4_entry(ULONG thread_input)
 {
-	UINT    status;
-
 	while (1)
 	{
 		tx_thread_sleep(10);
@@ -283,8 +285,6 @@ void    thread_4_entry(ULONG thread_input)
 
 void    thread_5_entry(ULONG thread_input)
 {
-	UINT    status;
-
 	while (1)
 	{
 		tx_thread_sleep(10);
@@ -294,8 +294,6 @@ void    thread_5_entry(ULONG thread_input)
 
 void    thread_6_entry(ULONG thread_input)
 {
-	UINT    status;
-
 	while (1)
 	{
 		tx_thread_sleep(10);
@@ -304,8 +302,6 @@ void    thread_6_entry(ULONG thread_input)
 
 void    thread_7_entry(ULONG thread_input)
 {
-	UINT    status;
-
 	while (1)
 	{
 		tx_thread_sleep(10);

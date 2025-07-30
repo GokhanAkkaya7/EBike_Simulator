@@ -5,6 +5,8 @@
 #include "her2_irq_drv_test.h"
 #include "her2_gpt_drv_test.h"
 #include "her2_io_drv_test.h"
+#include "her2_flash_drv_test.h"
+#include "her2_mx25_spi_fw_test.h"
 
 #if(APP_TEST)
 
@@ -42,6 +44,21 @@ void test_app_init(void)
 	io_test_main();
 
 #endif
+
+#if(DFLASH_TEST || CFLASH_TEST)
+
+	flash_test_init();
+	flash_test_main();
+
+#endif
+
+#if(SPI_TEST)
+
+	spi_test_init();
+	spi_test_main();
+
+#endif
+
 }
 
 void test_app_main(void)

@@ -19,6 +19,7 @@
 #include "stdbool.h"
 #include "stdlib.h"
 #include "string.h"
+#include "stdio.h"
 
 /*-------------------------------- Public  Macro Defines ---------------------------------*/
 
@@ -31,6 +32,8 @@
 #define IRQ_DRV                             1
 #define GPT_DRV                             1
 #define IO_DRV                              1
+#define FLASH_DRV                           1
+#define MX25_SPI_DRV                        1
 
 // APP Settings.
 #define APP_TEST                            1
@@ -39,6 +42,9 @@
 #define IRQ_TEST                            1
 #define GPT_TEST                            1
 #define IO_TEST                             1
+#define CFLASH_TEST                         0
+#define DFLASH_TEST                         1
+#define SPI_TEST                            1
 
 
 

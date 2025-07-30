@@ -50,6 +50,18 @@
     <ClCompile Include="her2_io_drv_test.c">
       <Filter>src\Driver\IO</Filter>
     </ClCompile>
+    <ClCompile Include="her2_flash_drv.c">
+      <Filter>src\Driver\Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_flash_drv_test.c">
+      <Filter>src\Driver\Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_mx25_spi_fw.c">
+      <Filter>src\Driver\SPI</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_mx25_spi_fw_test.c">
+      <Filter>src\Driver\SPI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\common\inc\tx_api.h">
@@ -130,6 +142,24 @@
     <ClInclude Include="her2_io_drv_test.h">
       <Filter>inc\Driver\IO</Filter>
     </ClInclude>
+    <ClInclude Include="her2_flash_drv_test.h">
+      <Filter>inc\Driver\Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_flash_drv.h">
+      <Filter>inc\Driver\Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_flash_drv.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_mx25_spi_fw.h">
+      <Filter>inc\Driver\SPI</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_mx25_spi_fw_test.h">
+      <Filter>inc\Driver\SPI</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_mx25_spi.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="inc">
@@ -200,6 +230,18 @@
     </Filter>
     <Filter Include="src\Driver\IO">
       <UniqueIdentifier>{6e7ef021-16cc-4d82-a9a8-297f7259bb00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\Flash">
+      <UniqueIdentifier>{6306dbcd-0ae4-46c0-819b-1139b4cb996f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\Flash">
+      <UniqueIdentifier>{cf44deb0-0172-4aa1-8de1-8764ffd83322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\SPI">
+      <UniqueIdentifier>{eeced0ab-dd99-443d-8f55-4217ecc80e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\SPI">
+      <UniqueIdentifier>{14f84941-0d8f-4e14-ad73-a1b508740ab2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
