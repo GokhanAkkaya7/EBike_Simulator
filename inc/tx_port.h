@@ -442,7 +442,7 @@ extern LARGE_INTEGER                            _tx_win32_time_stamp;
 #endif
 
 #ifndef TX_TIMER_PERIODIC
-#define TX_TIMER_PERIODIC                       10
+#define TX_TIMER_PERIODIC                       1
 #endif
 
 #endif

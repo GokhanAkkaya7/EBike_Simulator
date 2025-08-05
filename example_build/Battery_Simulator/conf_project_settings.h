@@ -20,8 +20,16 @@
 #include "stdlib.h"
 #include "string.h"
 #include "stdio.h"
+#include "time.h"
 
 /*-------------------------------- Public  Macro Defines ---------------------------------*/
+
+// Threadx Settings
+#define app_unit_ms						    (1/ (1000/TX_TIMER_TICKS_PER_SECOND))
+#define MS_IN_SEC							(1000 * app_unit_ms)
+#define MS_IN_MIN							(60 * MS_IN_SEC)
+#define MS_IN_HOUR							(60 * MS_IN_MIN)
+#define MS_IN_DAY							(24 * MS_IN_HOUR)
 
 // Project Settings.
 #define SIMULATOR_MODE					    1
@@ -34,6 +42,7 @@
 #define IO_DRV                              1
 #define FLASH_DRV                           1
 #define MX25_SPI_DRV                        1
+#define RTC_DRV                             1
 
 // APP Settings.
 #define APP_TEST                            1
@@ -45,6 +54,7 @@
 #define CFLASH_TEST                         0
 #define DFLASH_TEST                         1
 #define SPI_TEST                            1
+#define RTC_TEST                            1
 
 
 
@@ -52,48 +62,48 @@
 
 typedef enum
 {
-    APP_SUCCESS = 0,
+	APP_SUCCESS = 0,
 
-    APP_ERR_ASSERTION = 1,              // Given parameters are not appropriate.
-    APP_ERR_UART_WRITE = 2,             // UART write failed.
-    APP_ERR_UART_READ = 3,              // UART read failed
-    APP_ERR_DRV_CONFIGURE = 4,          // Driver is not configured before.
-    APP_ERR_THREADX = 5,                // Any ThreadX related fail.
-    APP_ERR_THREADX_TIMEOUT = 6,        // ThreadX operation timeout happened.
-    APP_ERR_UART_WRITE_TIMEOUT = 7,     // UART write operation timeout happened.
-    APP_ERR_FSP_ERR = 8,                // An unexpected error happened on FSP layer.
-    APP_ERR_UART_RX_EN_PIN_ERROR = 9,   // RX_EN_PIN can't be controlled on UART write.
-    APP_ERR_VEE_WRITE_TIEMOUT = 10,     // VEE can't write to flash in a timely manner
-    APP_ERR_VEE_RECORD_NOT_FOUND = 11,  // There is no record with the given ID.
-    APP_ERR_MX25_BUSY = 12,             // Couldn't complete MX25 operation it keeps busy.
-    APP_ERR_CAN_WRITE_TIMEOUT = 13,     // CAN write operation timeout happened.
-    APP_ERR_CLOCK_STATUS_ERROR = 14,    // Clock current status can't be read.
-    APP_ERR_CLOCK_START_ERROR = 15,     // Clock can't be started.
-    APP_ERR_CLOCK_INIT_ERROR = 16,      // Clock can't be initialised.
-    APP_ERR_CLOCK_INACTIVE = 17,        // Clock is not active.
-    APP_ERR_AFE_READ_PARSER_ERROR = 18,
-    APP_ERR_AFE_READ_TIMEOUT_ERROR = 19,
-    APP_ERR_NO_VALID_DATA = 20,
-    APP_ERR_IIC_WRITE_TIMEOUT = 21,
-    APP_ERR_IIC_READ_TIMEOUT = 22,
-    APP_ERR_BQ_FAULT_MASK_MISMATCH = 23,
-    APP_ERR_BQ_INVALID_FAULT_RESET_TYPE = 24,
+	APP_ERR_ASSERTION = 1,              // Given parameters are not appropriate.
+	APP_ERR_UART_WRITE = 2,             // UART write failed.
+	APP_ERR_UART_READ = 3,              // UART read failed
+	APP_ERR_DRV_CONFIGURE = 4,          // Driver is not configured before.
+	APP_ERR_THREADX = 5,                // Any ThreadX related fail.
+	APP_ERR_THREADX_TIMEOUT = 6,        // ThreadX operation timeout happened.
+	APP_ERR_UART_WRITE_TIMEOUT = 7,     // UART write operation timeout happened.
+	APP_ERR_FSP_ERR = 8,                // An unexpected error happened on FSP layer.
+	APP_ERR_UART_RX_EN_PIN_ERROR = 9,   // RX_EN_PIN can't be controlled on UART write.
+	APP_ERR_VEE_WRITE_TIEMOUT = 10,     // VEE can't write to flash in a timely manner
+	APP_ERR_VEE_RECORD_NOT_FOUND = 11,  // There is no record with the given ID.
+	APP_ERR_MX25_BUSY = 12,             // Couldn't complete MX25 operation it keeps busy.
+	APP_ERR_CAN_WRITE_TIMEOUT = 13,     // CAN write operation timeout happened.
+	APP_ERR_CLOCK_STATUS_ERROR = 14,    // Clock current status can't be read.
+	APP_ERR_CLOCK_START_ERROR = 15,     // Clock can't be started.
+	APP_ERR_CLOCK_INIT_ERROR = 16,      // Clock can't be initialised.
+	APP_ERR_CLOCK_INACTIVE = 17,        // Clock is not active.
+	APP_ERR_AFE_READ_PARSER_ERROR = 18,
+	APP_ERR_AFE_READ_TIMEOUT_ERROR = 19,
+	APP_ERR_NO_VALID_DATA = 20,
+	APP_ERR_IIC_WRITE_TIMEOUT = 21,
+	APP_ERR_IIC_READ_TIMEOUT = 22,
+	APP_ERR_BQ_FAULT_MASK_MISMATCH = 23,
+	APP_ERR_BQ_INVALID_FAULT_RESET_TYPE = 24,
 
-    APP_AFE_READ_WAITING = 25,
-    APP_FAIL = 26,
-    APP_SPI_EVENT_TIMEOUT = 27,
+	APP_AFE_READ_WAITING = 25,
+	APP_FAIL = 26,
+	APP_SPI_EVENT_TIMEOUT = 27,
 
-    APP_SHT4XA_READ_WAITING = 30,
-    APP_SHT4XA_READ_SUCCES = 31,
-    APP_ERR_SHT4XA_READ_FAIL = 32,
-    APP_ERR_SHT4XA_WRITE_FAIL = 33, //TODO @ACC: Name changed since humidity not implemented in app there is no error when it added change them
+	APP_SHT4XA_READ_WAITING = 30,
+	APP_SHT4XA_READ_SUCCES = 31,
+	APP_ERR_SHT4XA_READ_FAIL = 32,
+	APP_ERR_SHT4XA_WRITE_FAIL = 33, //TODO @ACC: Name changed since humidity not implemented in app there is no error when it added change them
 
-    APP_DEBUG_LOG_STRUCT_FULL = 35,
-    APP_DEBUG_LOG_NO_SUCH_LOG = 36,
+	APP_DEBUG_LOG_STRUCT_FULL = 35,
+	APP_DEBUG_LOG_NO_SUCH_LOG = 36,
 
-    APP_ERR_NOT_STABILIZED = 37,
-    APP_ERR_SSP_ERR = 38,
-    APP_CAN_MODE_NOT_NORMAL = 39
+	APP_ERR_NOT_STABILIZED = 37,
+	APP_ERR_SSP_ERR = 38,
+	APP_CAN_MODE_NOT_NORMAL = 39
 
 } app_err_t;
 

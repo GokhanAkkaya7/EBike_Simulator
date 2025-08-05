@@ -5,6 +5,11 @@
 
 typedef enum
 {
+	RTC_SET = 0, RTC_GET
+} rtc_event_t;
+
+typedef enum
+{
 	APP_IO_LEVEL_LOW = 0, APP_IO_LEVEL_HIGH
 } app_io_level_t;
 
@@ -25,6 +30,7 @@ typedef enum
 	DRIVER_IRQ,
 	DRIVER_CAN,
 	DRIVER_GPT,
+	DRIVER_RTC,
 	DRIVER_UNKNOWN
 } DriverType_e;
 
@@ -71,6 +77,18 @@ typedef struct
 
 typedef struct
 {
+	rtc_event_t rtc_event;
+	int second;
+	int minute;
+	int hour;
+	int day;
+	int month;
+	int year;
+
+} RtcData;
+
+typedef struct
+{
 	DriverType_e driver;
 	union
 	{
@@ -80,5 +98,6 @@ typedef struct
 		IrqData irq;
 		CanData can;
 		GptData gpt;
+		RtcData rtc;
 	} data;
 } Message;

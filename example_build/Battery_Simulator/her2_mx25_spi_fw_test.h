@@ -12,7 +12,7 @@
 
 /*----------------------------- Public Function Prototypes -------------------------------*/
 
-void spi_test_init(void);
+bool spi_test_init(void);
 void spi_test_main(void);
 
 #endif

@@ -62,6 +62,12 @@
     <ClCompile Include="her2_mx25_spi_fw_test.c">
       <Filter>src\Driver\SPI</Filter>
     </ClCompile>
+    <ClCompile Include="her2_rtc_drv.c">
+      <Filter>src\Driver\RTC</Filter>
+    </ClCompile>
+    <ClCompile Include="her2_rtc_drv_test.c">
+      <Filter>src\Driver\RTC</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\common\inc\tx_api.h">
@@ -160,6 +166,15 @@
     <ClInclude Include="conf_mx25_spi.h">
       <Filter>inc\Configuration</Filter>
     </ClInclude>
+    <ClInclude Include="conf_rtc_drv.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_rtc_drv.h">
+      <Filter>inc\Driver\RTC</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_rtc_drv_test.h">
+      <Filter>inc\Driver\RTC</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="inc">
@@ -242,6 +257,12 @@
     </Filter>
     <Filter Include="inc\Driver\SPI">
       <UniqueIdentifier>{14f84941-0d8f-4e14-ad73-a1b508740ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\RTC">
+      <UniqueIdentifier>{c44a3dd6-ebb6-4e8a-9705-ec2f8fef4bf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\RTC">
+      <UniqueIdentifier>{4ee73bb0-f8d6-4ae4-b526-bbf9a52bb874}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

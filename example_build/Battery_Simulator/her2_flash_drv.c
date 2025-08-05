@@ -52,12 +52,15 @@ static app_err_t check_and_create_flash_file(void);
  *****************************************************************************************/
 static app_err_t check_and_create_flash_file(void)
 {
-	FILE* fp = fopen(SIM_DATA_FLASH_FILENAME, "rb");			// Try to open the file for reading to check if it exists.
+	FILE* fp = NULL;
+	errno_t err;
 
-	if (fp == NULL)
+	err = fopen_s(&fp, SIM_DATA_FLASH_FILENAME, "rb");					// Try to open the file for reading to check if it exists.
+
+	if (err != 0)
 	{
-		fp = fopen(SIM_DATA_FLASH_FILENAME, "wb");				// File does not exist, so create it and fill it with 0xFF.
-		if (fp == NULL)
+		err = fopen_s(&fp, SIM_DATA_FLASH_FILENAME, "wb");				// File does not exist, so create it and fill it with 0xFF.
+		if ((err != 0) && (fp == NULL))
 			return APP_FAIL;
 
 

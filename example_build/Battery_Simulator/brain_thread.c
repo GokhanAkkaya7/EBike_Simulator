@@ -2,6 +2,7 @@
    threads of different priorities, using a message queue, semaphore, mutex, event flags group,
    byte pool, and block pool.  */
 
+#include	"conf_project_settings.h"
 #include	"Data_Distributor.h"
 #include	"Data_Handler.h"
 #include	"Pipe_Connection.h"
@@ -10,17 +11,18 @@
 #include	"her2_can_drv.h"
 #include	"her2_irq_drv.h"
 #include	"her2_gpt_drv.h"
+#include	"her2_io_drv.h"
+#include	"her2_rtc_drv.h"
 #include	"tx_api.h"
 #include	"stdio.h"
 #include	"driver_test_app.h"
 
-#define     DEMO_STACK_SIZE				2048
-#define     DEMO_BYTE_POOL_SIZE			32768
-#define     DEMO_BLOCK_POOL_SIZE		100
-#define     QUEUE_BUFFER_SIZE			256
-#define		QUEUE_MESSAGE_SIZE			16
+#define     DEMO_STACK_SIZE					2048
+#define     DEMO_BYTE_POOL_SIZE				32768
+#define     DEMO_BLOCK_POOL_SIZE			100
+#define		OUTGOING_QUEUE_CAPACITY			5
 
-#define		THREAD_LOOP_TIMEOUT			100
+#define		THREAD_LOOP_TIMEOUT				1000
 
    /* Define the ThreadX object control blocks...  */
 
@@ -39,10 +41,13 @@ TX_EVENT_FLAGS_GROUP    event_flags_0;
 TX_BYTE_POOL            byte_pool_0;
 TX_BLOCK_POOL           block_pool_0;
 TX_TIMER				timer_event;
+TX_QUEUE				g_outgoing_message_queue;
+TX_SEMAPHORE            g_outgoing_message_semaphore;
 
+/* Define Private Function prototypes.  */
+void outgoing_queue_notify_callback(TX_QUEUE* queue_ptr);
 
 /* Define thread prototypes.  */
-
 void    thread_0_entry(ULONG thread_input);
 void    thread_1_entry(ULONG thread_input);
 void    thread_2_entry(ULONG thread_input);
@@ -142,12 +147,6 @@ void    tx_application_define(void* first_unused_memory)
 		pointer, DEMO_STACK_SIZE,
 		8, 8, TX_NO_TIME_SLICE, TX_AUTO_START);
 
-	/* Allocate the message queue.  */
-	//tx_byte_allocate(&byte_pool_0, (VOID**)&pointer, QUEUE_MESSAGE_SAIZE * sizeof(ULONG), TX_NO_WAIT);
-
-	/* Create the message queue shared by threads 1 and 2.  */
-	//tx_queue_create(&queue_0, "queue 0", QUEUE_MESSAGE_SIZE, pointer, QUEUE_BUFFER_SIZE * QUEUE_MESSAGE_SIZE);
-
 	tx_semaphore_create(&data_ready_smph, "Data Ready Semaphore", 0);
 	tx_semaphore_create(&buffer_free_smph, "Buffer Free Semaphore", 1);
 
@@ -165,7 +164,20 @@ void    tx_application_define(void* first_unused_memory)
 	/* Allocate a block and release the block memory.  */
 	tx_block_allocate(&block_pool_0, (VOID**)&pointer, TX_NO_WAIT);
 
-	tx_timer_create(&timer_event, "Event Timer", timer_event_handler, 0, 1, 1, TX_AUTO_ACTIVATE);
+	tx_timer_create(&timer_event, "Event Timer", timer_event_handler, 0, 10 * app_unit_ms, 10 * app_unit_ms, TX_AUTO_ACTIVATE);
+
+	/* Allocate the message queue.  */
+	tx_byte_allocate(&byte_pool_0, (VOID**)&pointer, OUTGOING_QUEUE_CAPACITY * sizeof(ULONG), TX_NO_WAIT);
+
+	/* Create the message queue shared by threads 1 and 2.  */
+	UINT status = tx_queue_create(&g_outgoing_message_queue, "g_outgoing_message_queue", TX_1_ULONG, pointer, OUTGOING_QUEUE_CAPACITY * sizeof(ULONG));
+	if (status != TX_SUCCESS) 
+	{ 
+		while (1); 
+	}
+	tx_queue_send_notify(&g_outgoing_message_queue, outgoing_queue_notify_callback);
+
+	tx_semaphore_create(&g_outgoing_message_semaphore, "Outgoing Msg Sem", 0);
 
 	/* Release the block back to the pool.  */
 	tx_block_release(pointer);
@@ -177,7 +189,16 @@ void    tx_application_define(void* first_unused_memory)
 	timer_event_handler_init();
 }
 
-/* Define the test threads.  */
+/* Private Methods*/
+
+void outgoing_queue_notify_callback(TX_QUEUE* queue_ptr)
+{
+	(void)queue_ptr;
+	// Kuyruða yeni bir mesaj geldi, semaforu artýrarak gönderici thread'i uyandýr.
+	tx_semaphore_put(&g_outgoing_message_semaphore);
+}
+
+/* Define the threads.  */
 
 void    thread_0_entry(ULONG thread_input)
 {
@@ -230,7 +251,7 @@ void    thread_1_entry(ULONG thread_input)
 	while (1)
 
 	{
-		status = tx_event_flags_get(&timer_events, INTERRUPT_EVENT | GPT_RECEIVE_EVENT | IO_RECEIVE_EVENT, TX_OR_CLEAR,
+		status = tx_event_flags_get(&timer_events, INTERRUPT_EVENT | GPT_RECEIVE_EVENT | IO_RECEIVE_EVENT | RTC_RECEIVE_EVENT, TX_OR_CLEAR,
 			&tmr_events.u32byte, THREAD_LOOP_TIMEOUT);
 		if (tmr_events.bits.interrupt_event)
 		{
@@ -253,6 +274,13 @@ void    thread_1_entry(ULONG thread_input)
 			IO_DATAHANDLER(&main_io_data.data.io);
 			// TODO GA: Distribute callbacks in other way.
 		}
+		if (tmr_events.bits.rtc_receive_event)
+		{
+			Message main_rtc_data = { 0 };
+			get_main_data(&main_rtc_data, DRIVER_RTC);
+			RTC_DATAHANDLER(&main_rtc_data.data.rtc);
+			// TODO GA: Distribute callbacks in other way.
+		}
 	}
 }
 
@@ -261,7 +289,7 @@ void    thread_2_entry(ULONG thread_input)
 {
 	while (1)
 	{
-		pipe_main();
+		pipe_main_loop();
 		tx_thread_sleep(10);
 	}
 }
@@ -279,7 +307,7 @@ void    thread_4_entry(ULONG thread_input)
 {
 	while (1)
 	{
-		tx_thread_sleep(10);
+		tx_thread_sleep(100);
 	}
 }
 
@@ -287,7 +315,7 @@ void    thread_5_entry(ULONG thread_input)
 {
 	while (1)
 	{
-		tx_thread_sleep(10);
+		tx_thread_sleep(100);
 	}
 }
 
@@ -296,7 +324,7 @@ void    thread_6_entry(ULONG thread_input)
 {
 	while (1)
 	{
-		tx_thread_sleep(10);
+		tx_thread_sleep(100);
 	}
 }
 
@@ -304,6 +332,6 @@ void    thread_7_entry(ULONG thread_input)
 {
 	while (1)
 	{
-		tx_thread_sleep(10);
+		tx_thread_sleep(100);
 	}
 }

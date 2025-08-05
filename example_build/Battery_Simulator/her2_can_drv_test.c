@@ -58,7 +58,7 @@ static void can_rx_event(app_can_frame_t* p_packet)
  ******************************************************************************************/
 void can_test_init(void)
 {
-	APP_SUCCESS != can_drv_configure(&can_rx_event, NULL);
+	can_drv_configure(&can_rx_event, NULL);
 }
 
 /******************************************************************************************

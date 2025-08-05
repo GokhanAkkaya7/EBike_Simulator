@@ -18,6 +18,8 @@ DriverType_e get_driver_type(const char* driver_str)
 		return DRIVER_CAN;
 	if (strcmp(driver_str, "gpt") == 0)
 		return DRIVER_GPT;
+	if (strcmp(driver_str, "rtc") == 0)
+		return DRIVER_RTC;
 	return DRIVER_UNKNOWN;
 }
 
@@ -132,6 +134,32 @@ void parser_json(const char* json_str, Message* messages, int* message_count)
 			tx_event_flags_set(&timer_events, GPT_RECEIVE_EVENT, TX_OR);
 			break;
 		}
+
+		case DRIVER_RTC:
+		{
+			cJSON* event_type = cJSON_GetObjectItem(data, "rtc_event");
+			messages[i].data.rtc.rtc_event = (rtc_event_t)event_type->valueint;
+
+			if (messages[i].data.rtc.rtc_event == RTC_SET)
+			{
+				cJSON* sec = cJSON_GetObjectItem(data, "second");
+				cJSON* min = cJSON_GetObjectItem(data, "minute");
+				cJSON* hour = cJSON_GetObjectItem(data, "hour");
+				cJSON* day = cJSON_GetObjectItem(data, "day");
+				cJSON* mon = cJSON_GetObjectItem(data, "month");
+				cJSON* year = cJSON_GetObjectItem(data, "year");
+
+				messages[i].data.rtc.second = sec->valueint;
+				messages[i].data.rtc.minute = min->valueint;
+				messages[i].data.rtc.hour = hour->valueint;
+				messages[i].data.rtc.day = day->valueint;
+				messages[i].data.rtc.month = mon->valueint;
+				messages[i].data.rtc.year = year->valueint;
+			}
+			tx_event_flags_set(&timer_events, RTC_RECEIVE_EVENT, TX_OR);
+			break;
+		}
+
 		default:
 			break;
 		}
@@ -146,46 +174,42 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 		return false;
 
 	cJSON* root = cJSON_CreateArray();
+	if (!root) return false; 
 
 	for (int i = 0; i < count; ++i)
 	{
 		cJSON* item = cJSON_CreateObject();
+		if (!item) {
+			cJSON_Delete(root);
+			return false;
+		}
+
 		cJSON* data = cJSON_CreateObject();
+		if (!data) {
+			cJSON_Delete(item);
+			cJSON_Delete(root);
+			return false;
+		}
 
 		switch (messages[i].driver)
 		{
-		case DRIVER_ADC:
-			cJSON_AddStringToObject(item, "driver", "adc");
-			cJSON_AddNumberToObject(data, "index", messages[i].data.adc.index);
-			cJSON* arr = cJSON_CreateIntArray((const int*)messages[i].data.adc.buffer, messages[i].data.adc.buffer_len);
-			cJSON_AddItemToObject(data, "buffer", arr);
-			break;
 
-		case DRIVER_UART:
-			cJSON_AddStringToObject(item, "driver", "uart");
-			cJSON_AddStringToObject(data, "value", messages[i].data.uart.value);
-			break;
+		case DRIVER_RTC:
 
-		case DRIVER_IO:
-			cJSON_AddStringToObject(item, "driver", "io");
-			cJSON_AddNumberToObject(data, "pin", messages[i].data.io.pin);
-			cJSON_AddBoolToObject(data, "state", messages[i].data.io.state);
-			break;
+			cJSON_AddStringToObject(item, "driver", "rtc");
+			cJSON_AddStringToObject(item, "event", "RTC_SET"); 
 
-		case DRIVER_IRQ:
-			cJSON_AddStringToObject(item, "driver", "irq");
-			cJSON_AddNumberToObject(data, "id", messages[i].data.irq.channel_count);
-			cJSON_AddBoolToObject(data, "triggered", messages[i].data.irq.channel_list);
+			cJSON_AddNumberToObject(data, "year", messages[i].data.rtc.year);
+			cJSON_AddNumberToObject(data, "month", messages[i].data.rtc.month);
+			cJSON_AddNumberToObject(data, "day", messages[i].data.rtc.day);
+			cJSON_AddNumberToObject(data, "hour", messages[i].data.rtc.hour);
+			cJSON_AddNumberToObject(data, "minute", messages[i].data.rtc.minute);
+			cJSON_AddNumberToObject(data, "second", messages[i].data.rtc.second);
 			break;
-		case DRIVER_CAN:
-			cJSON_AddStringToObject(item, "driver", "irq");
-			cJSON_AddNumberToObject(data, "id", messages[i].data.can.id);
-			cJSON_AddBoolToObject(data, "triggered", messages[i].data.can.dlc);
-			cJSON_AddBoolToObject(data, "triggered", messages[i].data.can.can_buffer);
-			break;
-
 		default:
-			continue;
+			cJSON_Delete(data);
+			cJSON_Delete(item);
+			continue; 
 		}
 
 		cJSON_AddItemToObject(item, "data", data);
@@ -198,16 +222,16 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 		cJSON_Delete(root);
 		return false;
 	}
-
-	if (strlen(json_str) >= buffer_size)
+	size_t json_len = strlen(json_str);
+	if (json_len >= buffer_size)
 	{
 		free(json_str);
 		cJSON_Delete(root);
-		return false;
+		return false; 
 	}
 
 	strncpy(buffer, json_str, buffer_size - 1);
-	buffer[buffer_size - 1] = '\0';
+	buffer[buffer_size - 1] = '\0'; 
 
 	free(json_str);
 	cJSON_Delete(root);

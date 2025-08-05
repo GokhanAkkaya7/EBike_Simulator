@@ -45,7 +45,6 @@ static simulated_gpt_instance_t g_sim_gpts[MAX_GPT_CHANNELS];
 /*------------------------------- Private Function Prototypes ----------------------------*/
 
 static ULONG _timeunit_to_ms(GptUnit_e in_unit, int time_value);
-static ULONG _ms_to_ticks(ULONG ms);
 static void generic_gpt_callback(ULONG channel);
 static app_err_t gpt_open_ch(simulated_gpt_instance_t* p_inst);
 static app_err_t gpt_close_ch(simulated_gpt_instance_t* p_inst);
@@ -85,23 +84,6 @@ static ULONG _timeunit_to_ms(GptUnit_e in_unit, int time_value)
 }
 
 /******************************************************************************************
- * Function Name: _ms_to_ticks
- *
- * Description  : Convert the given ms value to timer_ticks.
- *
- * Arguments    : ULONG ms
- *
- * Return Value : ULONG
- ******************************************************************************************/
-static ULONG _ms_to_ticks(ULONG ms)
-{
-	if (ms == 0)
-		return 1;
-
-	return (ms * TX_TIMER_TICKS_PER_SECOND) / 1000;
-}
-
-/******************************************************************************************
  * Function Name: gpt_open_ch
  *
  * Description  : Open given GPT Channel.
@@ -123,7 +105,7 @@ static app_err_t gpt_open_ch(simulated_gpt_instance_t* p_inst)
 		result = APP_SUCCESS;
 	else
 	{
-		ULONG ticks = _ms_to_ticks(p_inst->initial_period_ms);
+		ULONG ticks = (p_inst->initial_period_ms) * app_unit_ms;
 
 		UINT status = tx_timer_create(&p_inst->tx_timer, p_inst->timer_name,
 			generic_gpt_callback, p_inst->channel_no,
@@ -282,7 +264,7 @@ static app_err_t gpt_setperiod_ch(simulated_gpt_instance_t* p_inst, uint16_t per
 	if (!p_inst->is_open)
 		result = APP_FAIL;
 
-	ULONG ticks = _ms_to_ticks(period);
+	ULONG ticks = period * app_unit_ms;
 
 	if (TX_SUCCESS == tx_timer_change(&p_inst->tx_timer, ticks, ticks))
 		result = APP_SUCCESS;

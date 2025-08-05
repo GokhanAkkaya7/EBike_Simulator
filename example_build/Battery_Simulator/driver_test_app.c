@@ -7,6 +7,7 @@
 #include "her2_io_drv_test.h"
 #include "her2_flash_drv_test.h"
 #include "her2_mx25_spi_fw_test.h"
+#include "her2_rtc_drv_test.h"
 
 #if(APP_TEST)
 
@@ -56,6 +57,13 @@ void test_app_init(void)
 
 	spi_test_init();
 	spi_test_main();
+
+#endif
+
+#if(RTC_TEST)
+
+	rtc_test_init();
+	rtc_test_main();
 
 #endif
 

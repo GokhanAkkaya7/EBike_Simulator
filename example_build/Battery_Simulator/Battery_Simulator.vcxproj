@@ -137,6 +137,7 @@
     <ClInclude Include="conf_ioport_drv.h" />
     <ClInclude Include="conf_irq_drv.h" />
     <ClInclude Include="conf_mx25_spi.h" />
+    <ClInclude Include="conf_rtc_drv.h" />
     <ClInclude Include="Data_Distributor.h" />
     <ClInclude Include="driver_api.h" />
     <ClInclude Include="driver_test_app.h" />
@@ -158,6 +159,8 @@
     <ClInclude Include="her2_irq_drv_test.h" />
     <ClInclude Include="her2_mx25_spi_fw.h" />
     <ClInclude Include="her2_mx25_spi_fw_test.h" />
+    <ClInclude Include="her2_rtc_drv.h" />
+    <ClInclude Include="her2_rtc_drv_test.h" />
     <ClInclude Include="Json.h" />
     <ClInclude Include="Pipe_Connection.h" />
   </ItemGroup>
@@ -180,6 +183,8 @@
     <ClCompile Include="her2_irq_drv_test.c" />
     <ClCompile Include="her2_mx25_spi_fw.c" />
     <ClCompile Include="her2_mx25_spi_fw_test.c" />
+    <ClCompile Include="her2_rtc_drv.c" />
+    <ClCompile Include="her2_rtc_drv_test.c" />
     <ClCompile Include="Json.c" />
     <ClCompile Include="brain_thread.c" />
     <ClCompile Include="Pipe_Connection.c" />

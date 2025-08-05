@@ -52,11 +52,14 @@ static bool internal_file_erase(uint32_t address, uint32_t size);
  *****************************************************************************************/
 static bool check_and_create_ext_flash_file(void)
 {
-	FILE* fp = fopen(SIM_EXT_FLASH_FILENAME, "rb");
-	if (NULL == fp)
+	FILE* fp = NULL;
+	errno_t err;
+
+	err = fopen_s(&fp, SIM_EXT_FLASH_FILENAME, "rb");
+	if (err != 0)
 	{
-		fp = fopen(SIM_EXT_FLASH_FILENAME, "wb");
-		if (NULL == fp)
+		err = fopen_s(&fp, SIM_EXT_FLASH_FILENAME, "wb");
+		if ((err != 0) && (NULL == fp))
 			return false;
 
 		// Just create the file. The actual erase (filling with 0xFF) will happen

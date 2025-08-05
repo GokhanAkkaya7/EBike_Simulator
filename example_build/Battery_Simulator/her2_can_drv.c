@@ -70,13 +70,6 @@ app_err_t can_drv_configure(void (*p_canbus_rx_event)(app_can_frame_t*), TX_EVEN
 
 	UINT tx_err = tx_mutex_create(&can_lock, (CHAR*)"CAN Bus Write Lock", TX_INHERIT);
 
-#if CAN_RESET_TIMEOUT_CONTROL // TODO : What is this!
-	status = tx_timer_create(&can_reopen_timer, "CAN Reopen Timeout Timer", can_reopen_timer_callback, 0,
-		CAN_RESET_TIMEOUT, CAN_RESET_TIMEOUT, TX_NO_ACTIVATE);
-	if (TX_SUCCESS != status)
-		return APP_ERR_THREADX;
-#endif
-
 	return APP_SUCCESS;
 }
 
