@@ -1,1 +1,0 @@
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Debug\Battery_Simulator.exe

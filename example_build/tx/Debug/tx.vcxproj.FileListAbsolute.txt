@@ -1,3 +1,0 @@
-D:\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\tx\Debug\tx.lib
-C:\D_sürücüsü\project_repos\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\tx\Debug\tx.lib
-C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\tx\Debug\tx.lib
