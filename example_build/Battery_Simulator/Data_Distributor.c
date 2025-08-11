@@ -17,8 +17,9 @@ void timer_event_handler_init(void)
 	UINT err_timer_events = tx_event_flags_create(&timer_events, (CHAR*)"Timer Event Flags");
 }
 
-void timer_event_handler(void)
+void timer_event_handler(ULONG timer_input)
 {
+	(void)timer_input;
 	static uint8_t timer_tick_count = 0; 
 
 	timer_tick_count++; // Every tick means 10ms

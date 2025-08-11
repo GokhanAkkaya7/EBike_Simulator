@@ -36,4 +36,4 @@ typedef union
 TX_EVENT_FLAGS_GROUP timer_events;
 
 void timer_event_handler_init(void);
-void timer_event_handler(void);
+void timer_event_handler(ULONG timer_input);

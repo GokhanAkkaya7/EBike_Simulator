@@ -2,7 +2,7 @@
 /******************************************************************************************
  * © Copyright [2025] VESTEL Corporation. All Rights Reserved.
  *
- * File Name    : conf_flash_drv.h
+ * File Name    : conf_dflash_drv.h
  * Author       : Gokhan Akkaya
  * Device(s)    : Renesas Synergy Family
  * Tool-Chain   : GCC ARM Embedded 10.3.1.20210824
@@ -11,8 +11,8 @@
  * Creation Date: 14.04.25
  ******************************************************************************************/
 
-#ifndef SRC_CONF_CONF_FLASH_DRV_H_
-#define SRC_CONF_CONF_FLASH_DRV_H_
+#ifndef SRC_CONF_CONF_DFLASH_DRV_H_
+#define SRC_CONF_CONF_DFLASH_DRV_H_
 
  /*------------------------------------ Includes ------------------------------------------*/
 

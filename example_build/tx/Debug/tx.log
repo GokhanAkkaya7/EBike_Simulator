@@ -55,8 +55,8 @@
   txe_timer_activate.c
   txe_timer_change.c
   txe_timer_create.c
-  txe_timer_deactivate.c
   txe_timer_delete.c
+  txe_timer_deactivate.c
   txe_timer_info_get.c
   tx_block_allocate.c
   tx_block_pool_cleanup.c

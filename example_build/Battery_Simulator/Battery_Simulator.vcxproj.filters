@@ -68,6 +68,48 @@
     <ClCompile Include="her2_rtc_drv_test.c">
       <Filter>src\Driver\RTC</Filter>
     </ClCompile>
+    <ClCompile Include="jsn_aes.c">
+      <Filter>jsn\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_log.c">
+      <Filter>jsn\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_monitor_log.c">
+      <Filter>jsn\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_flash_log.c">
+      <Filter>jsn\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_dbc.c">
+      <Filter>jsn\Debouncer</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_event_pubsub.c">
+      <Filter>jsn\EventPubSub</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_event_pub2.c">
+      <Filter>jsn\EventPubSub</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_event_pub3.c">
+      <Filter>jsn\EventPubSub</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_bq78350r1.c">
+      <Filter>jsn\Gauge</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_crc.c">
+      <Filter>jsn\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_bq32000.c">
+      <Filter>jsn\Exrtc</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_ring_buffer.c">
+      <Filter>jsn\RingBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_utils.c">
+      <Filter>jsn\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="jsn_threadx_utils.c">
+      <Filter>jsn\Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\common\inc\tx_api.h">
@@ -154,7 +196,7 @@
     <ClInclude Include="her2_flash_drv.h">
       <Filter>inc\Driver\Flash</Filter>
     </ClInclude>
-    <ClInclude Include="conf_flash_drv.h">
+    <ClInclude Include="conf_dflash_drv.h">
       <Filter>inc\Configuration</Filter>
     </ClInclude>
     <ClInclude Include="her2_mx25_spi_fw.h">
@@ -174,6 +216,69 @@
     </ClInclude>
     <ClInclude Include="her2_rtc_drv_test.h">
       <Filter>inc\Driver\RTC</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_aes.h">
+      <Filter>jsn\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_log.h">
+      <Filter>jsn\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_monitor_log.h">
+      <Filter>jsn\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_flash_log.h">
+      <Filter>jsn\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_dbc.h">
+      <Filter>jsn\Debouncer</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_event_pubsub.h">
+      <Filter>jsn\EventPubSub</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_event_pub2.h">
+      <Filter>jsn\EventPubSub</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_event_pub3.h">
+      <Filter>jsn\EventPubSub</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_bq78350r1.h">
+      <Filter>jsn\Gauge</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_crc.h">
+      <Filter>jsn\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_bq32000.h">
+      <Filter>jsn\Exrtc</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_ring_buffer.h">
+      <Filter>jsn\RingBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_utils.h">
+      <Filter>jsn\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="jsn_threadx_utils.h">
+      <Filter>jsn\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_aes.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_bq32000.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_bq78350.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_dbc.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_ringbuffer.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_log.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="conf_event_pubsub.h">
+      <Filter>inc\Configuration</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -263,6 +368,36 @@
     </Filter>
     <Filter Include="src\Driver\RTC">
       <UniqueIdentifier>{4ee73bb0-f8d6-4ae4-b526-bbf9a52bb874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn">
+      <UniqueIdentifier>{e9bf3cd8-09ea-4112-bfaf-4ee9570d5192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\Crypto">
+      <UniqueIdentifier>{12371dbd-cf1a-4579-87c9-ea0c4591f6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\Log">
+      <UniqueIdentifier>{5dc0190e-23e4-489b-8469-57180f603e6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\Utils">
+      <UniqueIdentifier>{5e9306c9-aff7-408f-bc4c-f236c0e8fcbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\Debouncer">
+      <UniqueIdentifier>{0cfbccae-18f6-4e4d-aa57-76623b18c9b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\EventPubSub">
+      <UniqueIdentifier>{ffcc84f1-5729-4dda-ad1d-29b62d0a1883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\Gauge">
+      <UniqueIdentifier>{94377277-a2eb-4bda-8559-8f81b9eddacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\RingBuffer">
+      <UniqueIdentifier>{bd3e6f3e-430e-4bc0-94f1-d5199fec0a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\Hash">
+      <UniqueIdentifier>{1bbc810c-0df7-462c-a747-68f21e813ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsn\Exrtc">
+      <UniqueIdentifier>{89f03425-9743-49dc-bdb3-b4aa10e3b696}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
