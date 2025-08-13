@@ -33,6 +33,7 @@
 
 // Project Settings.
 #define SIMULATOR_MODE					    1
+#define HERACLES_V2							1
 
 // Drivers.
 #define ADC_FW                              1
@@ -43,6 +44,11 @@
 #define FLASH_DRV                           1
 #define MX25_SPI_DRV                        1
 #define RTC_DRV                             1
+#define BQ78350								1
+#define DBC_APP								1
+#define EVENT_PUBSUB						1
+#define CRC									1
+#define RINGBUFFER							1
 
 // APP Settings.
 #define APP_TEST                            1

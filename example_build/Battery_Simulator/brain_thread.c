@@ -231,6 +231,10 @@ void    thread_0_entry(ULONG thread_input)
 				Message main_can_data = { 0 };
 				get_main_data(&main_can_data, DRIVER_CAN);
 				CANBUS_DRV_CALLBACK(&main_can_data);
+
+				Message main_bms_data = { 0 };
+				get_main_data(&main_bms_data, DRIVER_BMS);
+				printf("Current Value: %d\n", main_bms_data.data.bms.current);
 			}
 			if (tmr_events.bits.time_100msec_event)
 			{
@@ -241,7 +245,6 @@ void    thread_0_entry(ULONG thread_input)
 		}
 	}
 }
-
 
 void    thread_1_entry(ULONG thread_input)
 {
