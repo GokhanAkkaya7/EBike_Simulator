@@ -3,7 +3,7 @@
 * © Copyright [2021-2023] VESTEL Corporation. All Rights Reserved.
 *
 * File Name    : jsn_threadx_utils.h
-* Author       : Emre Erisgen
+* Author       : Gokhan Akkaya
 * Description  : Util functions related with ThreadX.
 * Project      : VESTEL Common modules project
 * Creation Date: 01.04.2021

@@ -49,6 +49,19 @@
 #define EVENT_PUBSUB						1
 #define CRC									1
 #define RINGBUFFER							1
+#define BQ32000								1
+
+#define MONITOR_FW                          1
+#define SMBUS_FW                            1
+#define IIC_FW                              1
+#define MURATA_ZY                           1
+#define DBC_APP                             1
+#define COMMON_LOGGER                       1
+#define CRC                                 1
+#define EVENT_PUBSUB                        1
+#define STATE_DISPLAY                       1
+#define BQ32000                             1
+#define AES                                 0
 
 // APP Settings.
 #define APP_TEST                            1
@@ -62,6 +75,83 @@
 #define SPI_TEST                            1
 #define RTC_TEST                            1
 
+// Log Config
+#define VESTEL_LOG                          0
+#define LOG_CAN_INTERFACE                   0
+#define CAN_LOG_STREAM                      1
+
+// Debug Flags.
+#define LED_TEST                            0
+#define DEBUG                               0
+#define DEBUG_UART                          0
+#define DEBUG_CANBUS                        0
+#define DEBUG_SMBUS                         0
+#define DEBUG_TIME                          0
+#define DEBUG_LOGGER                        0
+#define DEBUG_GAUGE                         0
+#define DEBUG_BRAIN                         0
+#define DEBUG_SPI                           0
+#define DEBUG_BLE                           0
+#define DEBUG_OTA                           0
+#define DEBUG_MONITOR                       0
+#define DEBUG_INIT                          0
+#define DEBUG_MRTZY                         0
+#define DEBUG_RTC                           1
+#define DEBUG_CHARGER                       1
+#define DEBUG_COMMON_LOG                    1 // Used for enabling software debug logs to be printed in communication interface of choice
+#define DEBUG_DUAL_BATTERY                  1 // Used for taking UART logs from the dual battery about current state, SOC and switch messages.
+#define DEBUG_SOC_DUAL_SWITCH               0 // Used for simulating dual switch in dsg. Timer decreases a mock soc value
+#define DEBUG_SOC_LEVEL                     0
+#define DEBUG_BLE_REMOTE_CTRL               0 // Used for keeping ble closed at start and enabling it to be controlled via communication protocols
+
+// Define Based Options
+#define IF04                                // HW Code
+//#define MIVICE_CAN_A68                      // Terminal Code // TODO GA: open it later.
+#define ANALOG_DOCK_DETECT                  // Dock Detection Method
+#define UDS
+#define NO_BLE                              // TODO: Change BLE compiler switch to do that
+
+// Charger Options (Warning:only 1 must be selected)
+#define CHARGE_GAUGE_CTRL                   1
+#define CHARGE_ADC_CTRL                     0
+
+// APP Settings
+#define ECHO_PINS                           0
+#define DOCK_CONTROL                        1
+#define SLEEP_AT_DOCK                       1
+#define CAN_APP                             1
+#define CAN_WAKE_UP                         1
+#define BLE                                 1
+#define BLE_PIN_ACTIVATION                  0
+#define BLE_ANIM_ON                         1
+#define RTC_PERIOD                          500 // 500msec. z  C C                                                                                GN
+#define UNUSED_COMMANDS                     0
+#define CELL_COUNT                          10
+#define CELL_PARALLEL_COUNT                 3
+#define IS_FET_OFF_DISABLED                 0
+#define PROFILING                           0
+#define OTA                                 1
+#define BIOS_OTA                            1
+#define SHUTDOWN_FOR_SHORTCIRCUIT           1
+#define PREDISCHARGE_MODE                   1
+#define PIN_BASED_CHARGER_DETECT            0
+#define DSG_DURING_CHG                      1
+#define EXTERNAL_RTC                        1
+#define MANUAL_RTC_INIT                     1
+#define SELF_CYCLE_COUNT                    1
+#define PACK_VOLT_SHUT_CTRL                 1
+#define RINGBUFFER                          1
+
+#define SWVER                               "lindwurm_v1.8.2"           // Software version of mivice IF04 project.
+#define HWVER                               "28BTS12-R3"                // Hardware version string for IF04 mivice can.
+#define MODEL_NO                            "VstlAcMv2CIF04"            // Model number string.
+#define SWVER_CAN                           {1, 8, 2, 0}                // Software version composed as : Major_feature/minor_feature/bugfix/
+#define MIVICE_PROTOCOL_VER                 {'A',69}                    // Protocol version A63
+#define BATTERY_MACHINE_HEADER              "Battery/Can/ykz_can_battery_machine.h"
+#define BRAIN_THREAD_MAX_LOOP_VAL           15
+#define GAUGE_THREAD_MAX_LOOP_VAL           15
+#define BLE_THREAD_MAX_LOOP_VAL             225
+#define LOGGER_THREAD_MAX_LOOP_VAL          200
 
 
 /*----------------------------- Public Typedef Definitions -------------------------------*/

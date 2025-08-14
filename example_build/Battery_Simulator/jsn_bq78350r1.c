@@ -2,7 +2,7 @@
  * © Copyright [2021-2023] VESTEL Corporation. All Rights Reserved.
  *
  * File Name    : jsn_bq78350r1.c
- * Author       : Emre Erisgen
+ * Author       : Gokhan Akkaya
  * Description  : TI BQ78350-R1 gauge IC module.
  * Project      : VESTEL Common modules project
  * Creation Date: 19.04.2021

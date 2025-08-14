@@ -2,7 +2,7 @@
  * © Copyright [2021-2023] VESTEL Corporation. All Rights Reserved.
  *
  * File Name    : her_dbc.c
- * Author       : Emre Erisgen
+ * Author       : Gokhan Akkaya
  * Description  : Debouncer module.
  * Project      : VESTEL Common modules project
  * Creation Date: 25.03.2022

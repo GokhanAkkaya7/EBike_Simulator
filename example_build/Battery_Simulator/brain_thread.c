@@ -16,6 +16,7 @@
 #include	"tx_api.h"
 #include	"stdio.h"
 #include	"driver_test_app.h"
+#include	"jsn_log.h"
 
 #define     DEMO_STACK_SIZE					2048
 #define     DEMO_BYTE_POOL_SIZE				32768
@@ -62,7 +63,6 @@ void    thread_7_entry(ULONG thread_input);
 
 int main()
 {
-
 	/* Enter the ThreadX kernel.  */
 	tx_kernel_enter();
 }
@@ -181,6 +181,8 @@ void    tx_application_define(void* first_unused_memory)
 
 	/* Release the block back to the pool.  */
 	tx_block_release(pointer);
+
+	log_init();
 
 	pipe_init();
 

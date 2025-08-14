@@ -448,9 +448,17 @@ void RTC_DATAHANDLER(RtcData* in_rtc_data)
 		response_message.data.rtc.minute = new_time.tm_min;
 		response_message.data.rtc.second = new_time.tm_sec;
 
+		in_rtc_data->second = new_time.tm_sec;
+		in_rtc_data->minute = new_time.tm_min;
+		in_rtc_data->hour = new_time.tm_hour;
+		in_rtc_data->day = new_time.tm_mday;
+		in_rtc_data->month = new_time.tm_mon + 1;
+		in_rtc_data->year = new_time.tm_year + 1900;
+
 		Message* p_msg = &response_message;
 
 		UINT status = tx_queue_send(&g_outgoing_message_queue, &p_msg, TX_NO_WAIT);
+		break;
 	default:
 		break;
 	}

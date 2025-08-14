@@ -3,7 +3,7 @@
  * © Copyright [2023] VESTEL Corporation. All Rights Reserved.
  *
  * File Name    : jsn_event_pubsub.c
- * Author       : Emre Erisgen
+ * Author       : Gokhan Akkaya
  * Tool-Chain   : GCC ARM Embedded 7.2.1.20170904
  * Description  : Event Publish/Subscribe module.
  * Project      : VESTEL Common modules project

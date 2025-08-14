@@ -3,7 +3,7 @@
 * © Copyright [2021-2023] VESTEL Corporation. All Rights Reserved.
 *
 * File Name    : jsn_crc.h
-* Author       : Emre Erisgen
+* Author       : Gokhan Akkaya
 * Description  : CRC hash module.
 * Project      : VESTEL Common modules project
 * Creation Date: 31.03.2021

@@ -88,7 +88,7 @@
 #if defined(DIOMEDES)
 #define LOGGER_MONITOR                  0    // TODO: Diomedes : Enable monitor log for diomedes when terminal is ready
 #else
-#define LOGGER_MONITOR                  1    // This define must be "1" when any log use monitor!!!
+#define LOGGER_MONITOR                  0    //TODO GA: Open it later. // This define must be "1" when any log use monitor!!!
 #endif
 
 #if(LOGGER_MONITOR)
