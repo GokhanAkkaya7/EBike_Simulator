@@ -17,6 +17,7 @@
 #include	"stdio.h"
 #include	"driver_test_app.h"
 #include	"jsn_log.h"
+#include	"jsn_bq78350r1.h"
 
 #define     DEMO_STACK_SIZE					2048
 #define     DEMO_BYTE_POOL_SIZE				32768
@@ -234,9 +235,9 @@ void    thread_0_entry(ULONG thread_input)
 				get_main_data(&main_can_data, DRIVER_CAN);
 				CANBUS_DRV_CALLBACK(&main_can_data);
 
-				Message main_bms_data = { 0 };
-				get_main_data(&main_bms_data, DRIVER_BMS);
-				printf("Current Value: %d\n", main_bms_data.data.bms.current);
+				bq78350r1_resp_t test;
+				bq78350r1_get_relsoc(&test);
+				printf("soc: %d", (int16_t)test.value);
 			}
 			if (tmr_events.bits.time_100msec_event)
 			{

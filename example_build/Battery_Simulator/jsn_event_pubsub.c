@@ -69,13 +69,13 @@ static int8_t find_event_pos(uint8_t* p_event, TX_EVENT_FLAGS_GROUP* p_flag, uin
  *                const event_record_t p_event_record_table[]
  * Return Value : bool
  * ****************************************************************************************/
-bool init_event_pubsub(uint8_t* p_event_sub_table, const event_record_t* p_event_record_table, uint8_t event_size)
+bool init_event_pubsub(uint8_t* p_event_sub_table[], const event_record_t* p_event_record_table[], uint8_t event_size)
 {
     UINT err_event_pubsub_lock;
     err_event_pubsub_lock = tx_mutex_create(&event_pubsub_lock, (CHAR*)"EventPubSub Lock", TX_INHERIT);
     if (TX_SUCCESS != err_event_pubsub_lock)
     {
-        //TODO GA: log_sw((uint8_t*)"init_event_pubsub: Event PubSub cant create lock", (uint16_t)err_event_pubsub_lock, error);
+        log_sw((uint8_t*)"init_event_pubsub: Event PubSub cant create lock", (uint16_t)err_event_pubsub_lock, error);
         return false;
     }
 

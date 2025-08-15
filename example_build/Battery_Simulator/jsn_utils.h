@@ -160,9 +160,9 @@ void jsn_print_text_direct(char* in_text);
 void jsn_print_int_direct(int64_t in_data);
 void jsn_print_textint_direct(char* in_text, int64_t in_data);
 
-void jsn_sprintf(char* p_buffer, uint8_t* p_text, uint8_t buffer_size, int64_t value);
-void jsn_sprintf_2var(uint8_t* p_buffer, uint8_t* p_text, uint8_t buffer_size, int64_t first_value,
-    int64_t second_value);
+//void jsn_sprintf(char* p_buffer, uint8_t* p_text, uint8_t buffer_size, int64_t value);
+//void jsn_sprintf_2var(uint8_t* p_buffer, uint8_t* p_text, uint8_t buffer_size, int64_t first_value,
+//    int64_t second_value);
 unsigned char compare_string(void* string1, void* string2);
 uint8_t* strstr_mem_area(uint8_t* searched_mem, uint8_t* p_searched_str, uint32_t memsize, uint32_t strsize);
 

@@ -32,7 +32,7 @@ typedef struct
 
 /*----------------------------- Public Function Prototypes -------------------------------*/
 
-bool init_event_pubsub(uint8_t p_event_sub_table[], const event_record_t p_event_record_table[], uint8_t event_size);
+bool init_event_pubsub(uint8_t* p_event_sub_table[], const event_record_t* p_event_record_table[], uint8_t event_size);
 bool sub_event(uint8_t event, TX_EVENT_FLAGS_GROUP* p_event_flag, uint32_t mask);
 bool unsub_event(uint8_t event, TX_EVENT_FLAGS_GROUP* p_event_flag, uint32_t mask);
 void unsub_all_event(TX_EVENT_FLAGS_GROUP* p_event_flag);

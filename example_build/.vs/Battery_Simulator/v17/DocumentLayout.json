@@ -7,12 +7,52 @@
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\brain_thread.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_log.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_bq78350r1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Json.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\Json.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Pipe_Connection.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\Pipe_Connection.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\driver_api.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\driver_api.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_bq78350r1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_utils.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_event_pubsub.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_event_pubsub.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_flash_log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_flash_log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_log.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_mx25_spi_fw.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -51,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_bq32000.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_bq78350r1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_threadx_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_threadx_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -71,14 +107,6 @@
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_dbc.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_utils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_utils.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_crc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_crc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -87,24 +115,8 @@
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_aes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_event_pubsub.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_event_pubsub.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_aes.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_aes.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_bq78350r1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\driver_api.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\driver_api.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_rtc_drv.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -123,16 +135,8 @@
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\driver_test_app.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Json.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\Json.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\config_simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\config_simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Pipe_Connection.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\Pipe_Connection.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_ring_buffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -211,10 +215,6 @@
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_event_pub2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_flash_log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_flash_log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_flash_log.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7342DEEF-AB3F-00D5-9EDB-2829CD277B76}|Battery_Simulator\\Battery_Simulator.vcxproj|solutionrelative:Battery_Simulator\\jsn_flash_log.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -241,111 +241,80 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "her2_mx25_spi_fw.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_mx25_spi_fw.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\her2_mx25_spi_fw.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_mx25_spi_fw.c",
-              "RelativeToolTip": "Battery_Simulator\\her2_mx25_spi_fw.c",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAnwPoAAAADAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "jsn_utils.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_utils.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.h",
+              "RelativeToolTip": "Battery_Simulator\\jsn_utils.h",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAIwKIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-07T10:56:08.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "jsn_event_pubsub.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pubsub.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.h",
+              "RelativeToolTip": "Battery_Simulator\\jsn_event_pubsub.h",
+              "ViewState": "AgIAABEAAAAAAAAAAAAnwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-07T10:51:24.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "jsn_event_pubsub.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pubsub.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.c",
+              "RelativeToolTip": "Battery_Simulator\\jsn_event_pubsub.c",
+              "ViewState": "AgIAADYAAAAAAAAAAAAnwEcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-14T11:09:31.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:51:15.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "jsn_utils.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_utils.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.c",
+              "RelativeToolTip": "Battery_Simulator\\jsn_utils.c",
+              "ViewState": "AgIAAKgCAAAAAAAAAAAnwLkCAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-07T10:56:24.136Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "jsn_log.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_log.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.c",
-              "RelativeToolTip": "Battery_Simulator\\jsn_log.c",
-              "ViewState": "AgIAAPQAAAAAAAAAAAAYwAgBAAACAAAAAAAAAA==",
+              "Title": "jsn_bq78350r1.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_bq78350r1.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.c",
+              "RelativeToolTip": "Battery_Simulator\\jsn_bq78350r1.c",
+              "ViewState": "AgIAAJECAAAAAAAAAAAQwKECAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:48:55.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "jsn_bq32000.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq32000.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_bq32000.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq32000.c",
-              "RelativeToolTip": "Battery_Simulator\\jsn_bq32000.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:55:13.777Z",
+              "WhenOpened": "2025-08-07T10:53:11.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "conf_log.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_log.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\conf_log.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_log.h",
-              "RelativeToolTip": "Battery_Simulator\\conf_log.h",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAnwFoAAABHAAAAAAAAAA==",
+              "Title": "jsn_bq78350r1.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_bq78350r1.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.h",
+              "RelativeToolTip": "Battery_Simulator\\jsn_bq78350r1.h",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwGIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T11:00:03.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:54:19.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "conf_project_settings.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_project_settings.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\conf_project_settings.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_project_settings.h",
-              "RelativeToolTip": "Battery_Simulator\\conf_project_settings.h",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAnwGwAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-11T13:34:18.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "jsn_log.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_log.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.h",
-              "RelativeToolTip": "Battery_Simulator\\jsn_log.h",
-              "ViewState": "AgIAACkAAAAAAAAAAAAnwDoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:49:12.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "her2_rtc_drv.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_rtc_drv.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\her2_rtc_drv.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_rtc_drv.h",
-              "RelativeToolTip": "Battery_Simulator\\her2_rtc_drv.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-14T05:01:24.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "jsn_monitor_log.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_monitor_log.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_monitor_log.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_monitor_log.h",
-              "RelativeToolTip": "Battery_Simulator\\jsn_monitor_log.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:49:42.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "jsn_monitor_log.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_monitor_log.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_monitor_log.c",
@@ -353,7 +322,32 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_monitor_log.c",
               "ViewState": "AgIAADIAAAAAAAAAAAAnwE0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:49:32.806Z",
+              "WhenOpened": "2025-08-07T10:49:32.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Json.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Json.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\Json.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Json.c",
+              "RelativeToolTip": "Battery_Simulator\\Json.c",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAEwPAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-07T10:43:29.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pipe_Connection.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Pipe_Connection.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\Pipe_Connection.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Pipe_Connection.c",
+              "RelativeToolTip": "Battery_Simulator\\Pipe_Connection.c",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAEwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-11T11:01:07.373Z",
               "EditorCaption": ""
             },
             {
@@ -364,7 +358,7 @@
               "RelativeDocumentMoniker": "Battery_Simulator\\brain_thread.c",
               "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\brain_thread.c",
               "RelativeToolTip": "Battery_Simulator\\brain_thread.c",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAAAO8AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAgwPkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-07T06:59:36.063Z",
               "EditorCaption": ""
@@ -372,6 +366,126 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "jsn_flash_log.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_flash_log.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_flash_log.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_flash_log.h",
+              "RelativeToolTip": "Battery_Simulator\\jsn_flash_log.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-07T10:50:12.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "driver_api.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\driver_api.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\driver_api.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\driver_api.h",
+              "RelativeToolTip": "Battery_Simulator\\driver_api.h",
+              "ViewState": "AgIAABMAAAAAAAAAAAAewBwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-11T11:01:40.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "jsn_log.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_log.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.h",
+              "RelativeToolTip": "Battery_Simulator\\jsn_log.h",
+              "ViewState": "AgIAACkAAAAAAAAAAAAnwDoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-07T10:49:12.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "jsn_log.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_log.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_log.c",
+              "RelativeToolTip": "Battery_Simulator\\jsn_log.c",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAYwAgBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-07T10:48:55.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "jsn_monitor_log.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_monitor_log.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_monitor_log.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_monitor_log.h",
+              "RelativeToolTip": "Battery_Simulator\\jsn_monitor_log.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-07T10:49:42.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "her2_rtc_drv.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_rtc_drv.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\her2_rtc_drv.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_rtc_drv.h",
+              "RelativeToolTip": "Battery_Simulator\\her2_rtc_drv.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-14T05:01:24.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "conf_project_settings.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_project_settings.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\conf_project_settings.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_project_settings.h",
+              "RelativeToolTip": "Battery_Simulator\\conf_project_settings.h",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAnwGwAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-11T13:34:18.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "conf_log.h",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_log.h",
+              "RelativeDocumentMoniker": "Battery_Simulator\\conf_log.h",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_log.h",
+              "RelativeToolTip": "Battery_Simulator\\conf_log.h",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAnwFoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-07T11:00:03.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "jsn_bq32000.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq32000.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_bq32000.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq32000.c",
+              "RelativeToolTip": "Battery_Simulator\\jsn_bq32000.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-07T10:55:13.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "her2_mx25_spi_fw.c",
+              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_mx25_spi_fw.c",
+              "RelativeDocumentMoniker": "Battery_Simulator\\her2_mx25_spi_fw.c",
+              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_mx25_spi_fw.c",
+              "RelativeToolTip": "Battery_Simulator\\her2_mx25_spi_fw.c",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAnwPoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-14T11:09:31.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "jsn_bq32000.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq32000.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_bq32000.h",
@@ -379,25 +493,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_bq32000.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:55:20.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:55:20.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "jsn_bq78350r1.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_bq78350r1.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.c",
-              "RelativeToolTip": "Battery_Simulator\\jsn_bq78350r1.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:53:11.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "jsn_threadx_utils.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_threadx_utils.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_threadx_utils.h",
@@ -405,12 +505,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_threadx_utils.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:56:55.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:56:55.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "jsn_threadx_utils.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_threadx_utils.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_threadx_utils.c",
@@ -418,12 +517,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_threadx_utils.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:56:48.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:56:48.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "jsn_dbc.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_dbc.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_dbc.h",
@@ -431,12 +529,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_dbc.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:50:50.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:50:50.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "jsn_dbc.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_dbc.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_dbc.c",
@@ -444,25 +541,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_dbc.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:50:42.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:50:42.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "jsn_utils.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_utils.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.h",
-              "RelativeToolTip": "Battery_Simulator\\jsn_utils.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:56:08.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "jsn_crc.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_crc.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_crc.c",
@@ -470,25 +553,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_crc.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:54:47.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:54:47.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "jsn_utils.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_utils.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_utils.c",
-              "RelativeToolTip": "Battery_Simulator\\jsn_utils.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:56:24.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "jsn_crc.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_crc.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_crc.h",
@@ -496,12 +565,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_crc.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:54:54.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:54:54.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "jsn_aes.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_aes.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_aes.h",
@@ -509,38 +577,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_aes.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:48:32.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:48:32.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "jsn_event_pubsub.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pubsub.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.h",
-              "RelativeToolTip": "Battery_Simulator\\jsn_event_pubsub.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:51:24.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "jsn_event_pubsub.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pubsub.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pubsub.c",
-              "RelativeToolTip": "Battery_Simulator\\jsn_event_pubsub.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:51:15.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "jsn_aes.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_aes.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_aes.c",
@@ -548,38 +589,11 @@
               "RelativeToolTip": "Battery_Simulator\\jsn_aes.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:48:20.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:48:20.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "jsn_bq78350r1.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_bq78350r1.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_bq78350r1.h",
-              "RelativeToolTip": "Battery_Simulator\\jsn_bq78350r1.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:54:19.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "driver_api.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\driver_api.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\driver_api.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\driver_api.h",
-              "RelativeToolTip": "Battery_Simulator\\driver_api.h",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAcwFMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-11T11:01:40.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "her2_rtc_drv.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_rtc_drv.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\her2_rtc_drv.c",
@@ -587,12 +601,11 @@
               "RelativeToolTip": "Battery_Simulator\\her2_rtc_drv.c",
               "ViewState": "AgIAAJIBAAAAAAAAAAAswL8BAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-14T05:13:13.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T05:13:13.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "her2_rtc_drv_test.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_rtc_drv_test.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\her2_rtc_drv_test.h",
@@ -600,12 +613,11 @@
               "RelativeToolTip": "Battery_Simulator\\her2_rtc_drv_test.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-14T05:01:22.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T05:01:22.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "driver_test_app.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\driver_test_app.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\driver_test_app.c",
@@ -613,12 +625,11 @@
               "RelativeToolTip": "Battery_Simulator\\driver_test_app.c",
               "ViewState": "AgIAADkAAAAAAAAAAAAcwDMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T07:47:46.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T07:47:46.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "config_simulator.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\config_simulator.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\config_simulator.h",
@@ -630,31 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Pipe_Connection.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Pipe_Connection.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\Pipe_Connection.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Pipe_Connection.c",
-              "RelativeToolTip": "Battery_Simulator\\Pipe_Connection.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-11T11:01:07.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Json.c",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Json.c",
-              "RelativeDocumentMoniker": "Battery_Simulator\\Json.c",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Json.c",
-              "RelativeToolTip": "Battery_Simulator\\Json.c",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAEwKYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-07T10:43:29.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "conf_bq32000.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_bq32000.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_bq32000.h",
@@ -662,12 +649,11 @@
               "RelativeToolTip": "Battery_Simulator\\conf_bq32000.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:58:35.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T10:58:35.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "jsn_ring_buffer.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_ring_buffer.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_ring_buffer.h",
@@ -679,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "jsn_ring_buffer.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_ring_buffer.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_ring_buffer.c",
@@ -691,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "conf_ringbuffer.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_ringbuffer.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_ringbuffer.h",
@@ -703,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "conf_event_pubsub.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_event_pubsub.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_event_pubsub.h",
@@ -715,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "her2_irq_drv.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_irq_drv.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\her2_irq_drv.c",
@@ -727,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "her2_irq_drv.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_irq_drv.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\her2_irq_drv.h",
@@ -739,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "conf_aes.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_aes.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_aes.h",
@@ -751,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "conf_dbc.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_dbc.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_dbc.h",
@@ -763,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "conf_canbus_drv.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_canbus_drv.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_canbus_drv.h",
@@ -775,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "her2_flash_drv.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_flash_drv.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\her2_flash_drv.h",
@@ -787,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Data_Handler.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Data_Handler.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\Data_Handler.c",
@@ -799,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Data_Distributor.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\Data_Distributor.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\Data_Distributor.c",
@@ -811,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "conf_bq78350.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_bq78350.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_bq78350.h",
@@ -823,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "conf_dflash_drv.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\conf_dflash_drv.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\conf_dflash_drv.h",
@@ -835,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "her2_irq_drv_test.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\her2_irq_drv_test.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\her2_irq_drv_test.c",
@@ -847,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "jsn_event_pub3.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pub3.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pub3.h",
@@ -859,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "jsn_event_pub3.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pub3.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pub3.c",
@@ -871,7 +857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "jsn_event_pub2.h",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pub2.h",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pub2.h",
@@ -883,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "jsn_event_pub2.c",
               "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_event_pub2.c",
               "RelativeDocumentMoniker": "Battery_Simulator\\jsn_event_pub2.c",
@@ -892,18 +878,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-07T10:52:09.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "jsn_flash_log.h",
-              "DocumentMoniker": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_flash_log.h",
-              "RelativeDocumentMoniker": "Battery_Simulator\\jsn_flash_log.h",
-              "ToolTip": "C:\\Users\\GOKHANAKK\\Documents\\Visual Studio 2022\\Projects\\e_bike_simulator\\threadx\\ports\\win32\\vs_2019\\example_build\\Battery_Simulator\\jsn_flash_log.h",
-              "RelativeToolTip": "Battery_Simulator\\jsn_flash_log.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-07T10:50:12.95Z"
             },
             {
               "$type": "Document",
