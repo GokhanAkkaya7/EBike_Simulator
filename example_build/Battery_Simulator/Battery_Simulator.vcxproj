@@ -137,7 +137,7 @@
     <ClInclude Include="conf_canbus_drv.h" />
     <ClInclude Include="conf_dbc.h" />
     <ClInclude Include="conf_event_pubsub.h" />
-    <ClInclude Include="conf_dflash_drv.h" />
+    <ClInclude Include="conf_flash_drv.h" />
     <ClInclude Include="conf_gpt_drv.h" />
     <ClInclude Include="conf_ioport_drv.h" />
     <ClInclude Include="conf_irq_drv.h" />

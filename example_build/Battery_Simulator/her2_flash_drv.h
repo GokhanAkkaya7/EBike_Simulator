@@ -19,7 +19,7 @@
 #include "conf_project_settings.h"
 
 #if(FLASH_DRV)
-#include "conf_dflash_drv.h"
+#include "conf_flash_drv.h"
 
 /*-------------------------------- Public  Macro Defines ---------------------------------*/
 
