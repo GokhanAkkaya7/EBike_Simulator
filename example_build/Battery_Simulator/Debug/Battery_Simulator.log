@@ -1,5 +1,0 @@
-﻿  her2_flash_drv.c
-  her2_flash_drv_test.c
-  Generating Code...
-     Creating library .\Debug\Battery_Simulator.lib and object .\Debug\Battery_Simulator.exp
-  Battery_Simulator.vcxproj -> C:\Users\GOKHANAKK\Documents\Visual Studio 2022\Projects\e_bike_simulator\threadx\ports\win32\vs_2019\example_build\Battery_Simulator\Debug\Battery_Simulator.exe
