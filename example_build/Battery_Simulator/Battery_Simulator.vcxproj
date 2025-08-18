@@ -142,6 +142,7 @@
     <ClInclude Include="conf_ioport_drv.h" />
     <ClInclude Include="conf_irq_drv.h" />
     <ClInclude Include="conf_log.h" />
+    <ClInclude Include="conf_monitor_fw.h" />
     <ClInclude Include="conf_mx25_spi.h" />
     <ClInclude Include="conf_ringbuffer.h" />
     <ClInclude Include="conf_rtc_drv.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="her2_io_drv_test.h" />
     <ClInclude Include="her2_irq_drv.h" />
     <ClInclude Include="her2_irq_drv_test.h" />
+    <ClInclude Include="her2_monitor_fw.h" />
     <ClInclude Include="her2_mx25_spi_fw.h" />
     <ClInclude Include="her2_mx25_spi_fw_test.h" />
     <ClInclude Include="her2_rtc_drv.h" />
@@ -202,6 +204,7 @@
     <ClCompile Include="her2_io_drv_test.c" />
     <ClCompile Include="her2_irq_drv.c" />
     <ClCompile Include="her2_irq_drv_test.c" />
+    <ClCompile Include="her2_monitor_fw.c" />
     <ClCompile Include="her2_mx25_spi_fw.c" />
     <ClCompile Include="her2_mx25_spi_fw_test.c" />
     <ClCompile Include="her2_rtc_drv.c" />

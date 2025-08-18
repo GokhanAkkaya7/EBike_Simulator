@@ -13,6 +13,7 @@
  /*------------------------------------ Includes ------------------------------------------*/
 
 #include "her2_gpt_drv.h"
+#include "her2_io_drv.h"
 
 #if(GPT_DRV)
 
@@ -27,6 +28,13 @@ typedef struct
 	ULONG initial_period_ms;
 	void (*app_callback)(void);
 	CHAR* timer_name;
+
+	/* PWM Settings Part */
+	bool is_pwm_mode;
+	uint8_t pwm_pin;
+	uint8_t duty_cycle_percent; // 0-100 percentage (%).
+	app_io_level_t current_pwm_state;
+
 } simulated_gpt_instance_t;
 
 /*----------------------------- Private Constant & Macro ----------------------------------*/
@@ -174,6 +182,39 @@ static app_err_t gpt_start_ch(simulated_gpt_instance_t* p_inst)
 
 	if (!p_inst->is_open)
 		result = APP_FAIL;
+	else if (p_inst->is_pwm_mode)
+	{
+		// --- Start Logic for PWM Mode ---
+		ULONG period_ms = p_inst->initial_period_ms;
+		if (period_ms == 0 || p_inst->duty_cycle_percent == 0)
+		{
+			set_pin_level((app_io_port_pin_t)p_inst->pwm_pin, APP_IO_LEVEL_LOW);
+			// Do not start the timer for 0% duty.
+		}
+		else if (p_inst->duty_cycle_percent == 100)
+		{
+			set_pin_level((app_io_port_pin_t)p_inst->pwm_pin, APP_IO_LEVEL_HIGH);
+			// Do not start the timer for 100% duty.
+		}
+		else
+		{
+			// Start the PWM cycle with the HIGH phase.
+			ULONG high_time_ms = (period_ms * p_inst->duty_cycle_percent) / 100;
+			ULONG high_time_ticks = high_time_ms * app_unit_ms;
+			if (high_time_ticks == 0) 
+				high_time_ticks = 1;
+
+			set_pin_level((app_io_port_pin_t)p_inst->pwm_pin, APP_IO_LEVEL_HIGH);
+			p_inst->current_pwm_state = APP_IO_LEVEL_HIGH;
+
+			// Change timer to a one-shot for the HIGH duration and activate it.
+			tx_timer_change(&p_inst->tx_timer, high_time_ticks, 0);
+			if (TX_SUCCESS != tx_timer_activate(&p_inst->tx_timer))
+			{
+				result = APP_ERR_THREADX;
+			}
+		}
+	}
 	else
 		if (TX_SUCCESS == tx_timer_activate(&p_inst->tx_timer))
 			result = APP_SUCCESS;
@@ -236,6 +277,26 @@ static app_err_t gpt_setduty_ch(simulated_gpt_instance_t* p_inst, uint8_t pin, u
 
 	app_err_t result = APP_SUCCESS;
 
+	if (!p_inst->is_open)
+		result = APP_ERR_DRV_CONFIGURE;
+	else
+	{
+		if (duty > 100)		// Clamp duty cycle to 100%
+			duty = 100; 
+
+		p_inst->is_pwm_mode = true;
+		p_inst->pwm_pin = pin;
+		p_inst->duty_cycle_percent = duty;
+
+		// When setting duty, stop the timer. It will be reconfigured on the next gpt_start_ch call.
+		tx_timer_deactivate(&p_inst->tx_timer);
+
+		// Set the initial pin state. If duty is 0, it should be low. Otherwise, high.
+		app_io_level_t initial_level = (duty == 0) ? APP_IO_LEVEL_LOW : APP_IO_LEVEL_HIGH;
+		set_pin_level((app_io_port_pin_t)pin, initial_level);
+		p_inst->current_pwm_state = initial_level;
+	}
+
 	tx_res = tx_mutex_put(&gpt_lock);
 
 	return result;
@@ -292,8 +353,44 @@ static void generic_gpt_callback(ULONG channel)
 
 	simulated_gpt_instance_t* p_instance = &g_sim_gpts[channel];
 
-	if (p_instance->is_configured && p_instance->app_callback)		// Check if there is r4ecorded callback.
-		p_instance->app_callback();
+	if (p_instance->is_pwm_mode)
+	{
+		// --- PWM Logic ---
+		ULONG period_ms = p_instance->initial_period_ms;
+		if (period_ms == 0) 
+			return;
+
+		ULONG high_time_ms = (period_ms * p_instance->duty_cycle_percent) / 100;
+		ULONG low_time_ms = period_ms - high_time_ms;
+		ULONG next_delay_ticks;
+
+		if (p_instance->current_pwm_state == APP_IO_LEVEL_HIGH)
+		{
+			set_pin_level((app_io_port_pin_t)p_instance->pwm_pin, APP_IO_LEVEL_LOW);
+			p_instance->current_pwm_state = APP_IO_LEVEL_LOW;
+			next_delay_ticks = low_time_ms * app_unit_ms;
+		}
+		else // current_pwm_state == APP_IO_LEVEL_LOW
+		{
+			set_pin_level((app_io_port_pin_t)p_instance->pwm_pin, APP_IO_LEVEL_HIGH);
+			p_instance->current_pwm_state = APP_IO_LEVEL_HIGH;
+			next_delay_ticks = high_time_ms * app_unit_ms;
+
+			// A full PWM cycle is complete, fire the periodic callback.
+			if (p_instance->app_callback) {
+				p_instance->app_callback();
+			}
+		}
+
+		if (next_delay_ticks > 0) {
+			// Change the timer to a one-shot for the next phase.
+			tx_timer_change(&p_instance->tx_timer, next_delay_ticks, 0);
+			tx_timer_activate(&p_instance->tx_timer);
+		}
+	}
+	else
+		if (p_instance->is_configured && p_instance->app_callback)		// Check if there is r4ecorded callback.
+			p_instance->app_callback();
 
 }
 

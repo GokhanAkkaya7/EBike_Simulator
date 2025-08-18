@@ -13,8 +13,8 @@
 #include	"her2_gpt_drv.h"
 #include	"her2_io_drv.h"
 #include	"her2_rtc_drv.h"
+#include	"her2_monitor_fw.h"
 #include	"tx_api.h"
-#include	"stdio.h"
 #include	"driver_test_app.h"
 #include	"jsn_log.h"
 #include	"jsn_bq78350r1.h"
@@ -59,6 +59,7 @@ void    thread_5_entry(ULONG thread_input);
 void    thread_6_entry(ULONG thread_input);
 void    thread_7_entry(ULONG thread_input);
 
+/* Initialisation Phase Result Flags*/
 
 /* Define main entry point.  */
 
@@ -190,6 +191,8 @@ void    tx_application_define(void* first_unused_memory)
 	data_handler_init();
 
 	timer_event_handler_init();
+
+	monitor_fw_configure();
 }
 
 /* Private Methods*/
@@ -306,6 +309,7 @@ void    thread_3_entry(ULONG thread_input)
 	{
 		pipe_data_receive();
 		tx_thread_sleep(10);
+
 	}
 }
 

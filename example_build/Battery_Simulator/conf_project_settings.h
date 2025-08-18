@@ -50,6 +50,7 @@
 #define CRC									1
 #define RINGBUFFER							1
 #define BQ32000								1
+#define MONITOR_FW							1
 
 #define MONITOR_FW                          1
 #define SMBUS_FW                            1

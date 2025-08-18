@@ -110,6 +110,9 @@
     <ClCompile Include="jsn_threadx_utils.c">
       <Filter>jsn\Utils</Filter>
     </ClCompile>
+    <ClCompile Include="her2_monitor_fw.c">
+      <Filter>src\Driver\Monitor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\common\inc\tx_api.h">
@@ -280,6 +283,12 @@
     <ClInclude Include="conf_event_pubsub.h">
       <Filter>inc\Configuration</Filter>
     </ClInclude>
+    <ClInclude Include="conf_monitor_fw.h">
+      <Filter>inc\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="her2_monitor_fw.h">
+      <Filter>inc\Driver\Monitor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="inc">
@@ -398,6 +407,12 @@
     </Filter>
     <Filter Include="jsn\Exrtc">
       <UniqueIdentifier>{89f03425-9743-49dc-bdb3-b4aa10e3b696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Driver\Monitor">
+      <UniqueIdentifier>{7d5e9a6f-c29b-4e40-b362-6aedae6d4120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Driver\Monitor">
+      <UniqueIdentifier>{818228d5-daed-4223-b53f-3f6081996b10}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
