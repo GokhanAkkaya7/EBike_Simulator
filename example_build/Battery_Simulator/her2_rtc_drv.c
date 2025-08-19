@@ -13,7 +13,6 @@
  /*------------------------------------ Includes ------------------------------------------*/
 
 #include "her2_rtc_drv.h"
-
 #if(RTC_DRV)
 #include "driver_api.h"
 
@@ -458,6 +457,7 @@ void RTC_DATAHANDLER(RtcData* in_rtc_data)
 		Message* p_msg = &response_message;
 
 		UINT status = tx_queue_send(&g_outgoing_message_queue, &p_msg, TX_NO_WAIT);
+
 		break;
 	default:
 		break;

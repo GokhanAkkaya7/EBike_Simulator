@@ -347,6 +347,26 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 			cJSON_AddNumberToObject(data, "minute", messages[i].data.rtc.minute);
 			cJSON_AddNumberToObject(data, "second", messages[i].data.rtc.second);
 			break;
+		case DRIVER_CAN:
+			cJSON_AddStringToObject(item, "driver", "can");
+			cJSON_AddNumberToObject(data, "id", messages[i].data.can.id);
+			cJSON_AddNumberToObject(data, "dlc", messages[i].data.can.dlc);
+
+			cJSON* can_array = cJSON_CreateArray();
+			if (!can_array) {
+				cJSON_Delete(data);
+				cJSON_Delete(item);
+				cJSON_Delete(root);
+				return false;
+			}
+
+			for (int j = 0; j < messages[i].data.can.dlc && j < 8; ++j) 
+			{
+				cJSON_AddItemToArray(can_array, cJSON_CreateNumber(messages[i].data.can.can_buffer[j]));
+			}
+			cJSON_AddItemToObject(data, "can_buffer", can_array);
+
+			break;
 		default:
 			cJSON_Delete(data);
 			cJSON_Delete(item);

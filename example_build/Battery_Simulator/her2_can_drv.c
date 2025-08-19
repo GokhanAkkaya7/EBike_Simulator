@@ -16,15 +16,11 @@
 static TX_MUTEX can_lock;
 static void (*p_can_rx_event)(app_can_frame_t*);
 static TX_EVENT_FLAGS_GROUP* p_canbus_eflags = NULL;
-
-#if CAN_RESET_TIMEOUT_CONTROL // TODO : What is this!
-static TX_TIMER can_reopen_timer;
-#endif
+static Message can_write_message;
 
 /*---------------------------------- Global Variables ------------------------------------*/
 
-#if (DEBUG_CANBUS)
-#endif
+extern TX_QUEUE g_outgoing_message_queue;
 
 /*------------------------------- Private Function Prototypes ----------------------------*/
 
@@ -230,7 +226,15 @@ app_err_t can_drv_write_frame(app_can_frame_t* p_frame, uint8_t mailbox, uint8_t
 
 	app_err_t result = APP_SUCCESS;
 
-	// TODO GA:
+	can_write_message.driver = DRIVER_CAN;
+	can_write_message.data.can.id = p_frame->id;
+	can_write_message.data.can.dlc = p_frame->data_length_code;
+
+	for (uint8_t can_indx = 0; can_indx < p_frame->data_length_code; can_indx++)
+		can_write_message.data.can.can_buffer[can_indx] = p_frame->data[can_indx];
+
+	Message* p_msg = &can_write_message;
+	UINT status = tx_queue_send(&g_outgoing_message_queue, &p_msg, TX_NO_WAIT);
 
 	tx_res = tx_mutex_put(&can_lock);
 	return result;
@@ -254,7 +258,6 @@ void CANBUS_DRV_CALLBACK(Message* p_cb_data)
 
 	for (uint8_t can_index = 0; can_index < 8; can_index++)
 		rx_frame.data[can_index] = (uint8_t)p_cb_data->data.can.can_buffer[can_index];
-
 
 	p_can_rx_event(&rx_frame);
 }
