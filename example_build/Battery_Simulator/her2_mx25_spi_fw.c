@@ -20,7 +20,7 @@
 
 /*----------------------------- Private Constant & Macro ----------------------------------*/
 
-#define SIM_EXT_FLASH_FILENAME              "external_flash.bin"
+#define SIM_EXT_FLASH_FILENAME              "external_flash.txt"
 #define FLASH_ERASED_VALUE                  (0xFF)
 #define ERASE_CHUNK_SIZE                    (256)				// Macronix Page Size.
 
@@ -90,9 +90,11 @@ static bool internal_file_erase(uint32_t address, uint32_t size)
 	}
 
 	bool result = false;
+	FILE* fp = NULL;
+	errno_t err;
 
-	FILE* fp = fopen(SIM_EXT_FLASH_FILENAME, "r+b");    // Open for read/write
-	if (fp != NULL)
+	err = fopen_s(&fp, SIM_EXT_FLASH_FILENAME, "r+b");     // Open for read/write
+	if (err == 0 && fp != NULL)
 	{
 		if (fseek(fp, address, SEEK_SET) == 0)
 		{
@@ -238,8 +240,12 @@ app_err_t mx25_write(uint32_t address, uint8_t* p_buffer, uint32_t length)
 		result = APP_ERR_ASSERTION;
 	else
 	{
-		FILE* fp = fopen(SIM_EXT_FLASH_FILENAME, "r+b");
-		if (fp)
+		FILE* fp = NULL;
+		errno_t err;
+
+		// Open for read/write in binary mode.
+		err = fopen_s(&fp, SIM_EXT_FLASH_FILENAME, "r+b");
+		if (err == 0 && fp != NULL)
 		{
 			if (fseek(fp, address, SEEK_SET) == 0)
 			{
@@ -286,8 +292,13 @@ app_err_t mx25_read(uint32_t address, uint8_t* p_buffer, uint32_t length)
 		result = APP_ERR_ASSERTION;
 	else
 	{
-		FILE* fp = fopen(SIM_EXT_FLASH_FILENAME, "rb");
-		if (fp)
+		FILE* fp = NULL;
+		errno_t err;
+
+		// Open for read in binary mode.
+		err = fopen_s(&fp, SIM_EXT_FLASH_FILENAME, "rb");
+
+		if (err == 0 && fp != NULL)
 		{
 			if (fseek(fp, address, SEEK_SET) == 0)
 			{

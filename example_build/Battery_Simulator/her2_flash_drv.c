@@ -20,7 +20,7 @@
 
 /*----------------------------- Private Constant & Macro ----------------------------------*/
 
-#define SIM_DATA_FLASH_FILENAME				"dataflash.bin"
+#define SIM_DATA_FLASH_FILENAME				"dataflash.txt"
 #define SIM_DATA_FLASH_SIZE					(DATAFLASH_BLOCK_TOTAL_NUMBER * DATAFLASH_BLOCK_SIZE)
 #define CHUNK_SIZE							(DATAFLASH_BLOCK_SIZE) // Define a 1KB chunk size for writing.
 #define FLASH_ERASED_VALUE					(0xFF)
@@ -187,9 +187,10 @@ app_err_t dflash_drv_block_write(uint8_t const* const p_write_buffer, uint32_t b
 		result = APP_ERR_ASSERTION;
 	else
 	{
-		FILE* fp = fopen(SIM_DATA_FLASH_FILENAME, "r+b"); // Open for read/write in binary mode
+		FILE* fp = NULL;
+		errno_t err = fopen_s(&fp, SIM_DATA_FLASH_FILENAME, "r+b"); // Open for read/write in binary mode
 
-		if (fp != NULL)
+		if (err == 0 && fp != NULL)
 		{
 			if (fseek(fp, block_address, SEEK_SET) == 0)
 			{
@@ -248,9 +249,10 @@ app_err_t dflash_drv_block_read(uint8_t* p_read_buffer, uint32_t block_address, 
 		result = APP_ERR_ASSERTION;
 	else
 	{
-		FILE* fp = fopen(SIM_DATA_FLASH_FILENAME, "rb"); // Open for reading in binary mode
+		FILE* fp = NULL;
+		errno_t err = fopen_s(&fp, SIM_DATA_FLASH_FILENAME, "rb"); // Open for reading in binary mode
 
-		if (fp != NULL)
+		if (err == 0 && fp != NULL)
 		{
 			if (fseek(fp, block_address, SEEK_SET) == 0)
 			{
