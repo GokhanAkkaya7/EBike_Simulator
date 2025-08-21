@@ -190,7 +190,6 @@ typedef struct
 	uint16_t lifetime_cuv_events_count;
 	uint16_t lifetime_ocd_events_count;
 	uint16_t lifetime_occ_events_count;
-	// ... Diðer olay sayaçlarý (AOLD, ASCD, OTC, OTD)
 
 	// Lifetime Block 7
 	uint16_t lifetime_otf_events_count; // FET Over Temp

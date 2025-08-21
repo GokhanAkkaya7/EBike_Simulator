@@ -163,7 +163,7 @@ void parser_json(const char* json_str, Message* messages, int* message_count)
 		}
 		case DRIVER_BMS:
 		{
-			cJSON* val; 
+			cJSON* val;
 			BmsData* bms_data_ptr = &messages[i].data.bms;
 
 			// ===============================================
@@ -193,6 +193,12 @@ void parser_json(const char* json_str, Message* messages, int* message_count)
 			val = cJSON_GetObjectItem(data, "full_charge_capacity");
 			if (val) bms_data_ptr->full_charge_capacity = (uint16_t)val->valueint;
 
+			val = cJSON_GetObjectItem(data, "average_time_to_empty");
+			if (val) bms_data_ptr->average_time_to_empty = (uint16_t)val->valueint;
+
+			val = cJSON_GetObjectItem(data, "average_time_to_full");
+			if (val) bms_data_ptr->average_time_to_full = (uint16_t)val->valueint;
+
 			cJSON* cell_voltages_array = cJSON_GetObjectItem(data, "cell_voltages");
 			if (cJSON_IsArray(cell_voltages_array)) {
 				int count = cJSON_GetArraySize(cell_voltages_array);
@@ -205,31 +211,39 @@ void parser_json(const char* json_str, Message* messages, int* message_count)
 			// ===============================================
 			// State Flags.
 			// ===============================================
-			cJSON* status_array = cJSON_GetObjectItem(data, "safety_status");
-			if (cJSON_IsArray(status_array)) {
-				uint32_t temp_status = 0;
-				for (int j = 0; j < cJSON_GetArraySize(status_array) && j < 4; ++j) {
-					temp_status |= ((uint8_t)cJSON_GetArrayItem(status_array, j)->valueint << (j * 8));
-				}
-				bms_data_ptr->safety_status = temp_status;
+			val = cJSON_GetObjectItem(data, "safety_status");
+			if (cJSON_IsNumber(val)) {
+				bms_data_ptr->safety_status = (uint32_t)val->valueint;
 			}
 
-			status_array = cJSON_GetObjectItem(data, "charging_status");
-			if (cJSON_IsArray(status_array)) {
-				uint16_t temp_status = 0;
-				for (int j = 0; j < cJSON_GetArraySize(status_array) && j < 2; ++j) {
-					temp_status |= ((uint8_t)cJSON_GetArrayItem(status_array, j)->valueint << (j * 8));
-				}
-				bms_data_ptr->charging_status = temp_status;
+			val = cJSON_GetObjectItem(data, "charging_status");
+			if (cJSON_IsNumber(val)) {
+				bms_data_ptr->charging_status = (uint16_t)val->valueint;
 			}
 
-			status_array = cJSON_GetObjectItem(data, "operation_status");
-			if (cJSON_IsArray(status_array)) {
-				uint32_t temp_status = 0;
-				for (int j = 0; j < cJSON_GetArraySize(status_array) && j < 4; ++j) {
-					temp_status |= ((uint8_t)cJSON_GetArrayItem(status_array, j)->valueint << (j * 8));
-				}
-				bms_data_ptr->operation_status = temp_status;
+			val = cJSON_GetObjectItem(data, "operation_status");
+			if (cJSON_IsNumber(val)) {
+				bms_data_ptr->operation_status = (uint32_t)val->valueint;
+			}
+
+			val = cJSON_GetObjectItem(data, "gauging_status");
+			if (cJSON_IsNumber(val)) {
+				bms_data_ptr->gauging_status = (uint16_t)val->valueint;
+			}
+
+			val = cJSON_GetObjectItem(data, "battery_status");
+			if (cJSON_IsNumber(val)) {
+				bms_data_ptr->battery_status = (uint16_t)val->valueint;
+			}
+
+			val = cJSON_GetObjectItem(data, "manufacturing_status");
+			if (cJSON_IsNumber(val)) {
+				bms_data_ptr->manufacturing_status = (uint16_t)val->valueint;
+			}
+
+			val = cJSON_GetObjectItem(data, "pf_status");
+			if (cJSON_IsNumber(val)) {
+				bms_data_ptr->pf_status = (uint32_t)val->valueint;
 			}
 
 			// ===============================================
@@ -241,62 +255,45 @@ void parser_json(const char* json_str, Message* messages, int* message_count)
 			val = cJSON_GetObjectItem(data, "device_name");
 			if (cJSON_IsString(val)) strncpy(bms_data_ptr->device_name, val->valuestring, sizeof(bms_data_ptr->device_name) - 1);
 
+			val = cJSON_GetObjectItem(data, "firmware_version");
+			if (cJSON_IsString(val)) strncpy(bms_data_ptr->firmware_version, val->valuestring, sizeof(bms_data_ptr->firmware_version) - 1);
 
-			//// ===============================================
-			//// Configuration.
-			//// ===============================================
-			//cJSON* config_obj = cJSON_GetObjectItem(data, "Configuration");
-			//if (cJSON_IsObject(config_obj))
-			//{
-			//	val = cJSON_GetObjectItem(config_obj, "CuvThreshold");
-			//	if (val) bms_data_ptr->cuv_threshold = (uint16_t)val->valueint;
-			//	val = cJSON_GetObjectItem(config_obj, "CuvRecovery");
-			//	if (val) bms_data_ptr->cuv_recovery = (uint16_t)val->valueint;
+			val = cJSON_GetObjectItem(data, "design_capacity");
+			if (val) bms_data_ptr->design_capacity = (uint16_t)val->valueint;
 
-			//	val = cJSON_GetObjectItem(config_obj, "CovThreshold");
-			//	if (val) bms_data_ptr->cov_threshold = (uint16_t)val->valueint;
-			//	val = cJSON_GetObjectItem(config_obj, "CovRecovery");
-			//	if (val) bms_data_ptr->cov_recovery = (uint16_t)val->valueint;
+			val = cJSON_GetObjectItem(data, "design_voltage");
+			if (val) bms_data_ptr->design_voltage = (uint16_t)val->valueint;
 
-			//	val = cJSON_GetObjectItem(config_obj, "OccThreshold");
-			//	if (val) bms_data_ptr->occ_threshold = (int16_t)val->valueint;
-			//	val = cJSON_GetObjectItem(config_obj, "OccRecovery");
-			//	if (val) bms_data_ptr->occ_recovery = (int16_t)val->valueint;
+			val = cJSON_GetObjectItem(data, "manufacture_date");
+			if (val) bms_data_ptr->manufacture_date = (uint16_t)val->valueint;
 
-			//	val = cJSON_GetObjectItem(config_obj, "OcdThreshold");
-			//	if (val) bms_data_ptr->ocd_threshold = (int16_t)val->valueint;
-			//	val = cJSON_GetObjectItem(config_obj, "OcdRecovery");
-			//	if (val) bms_data_ptr->ocd_recovery = (int16_t)val->valueint;
-			//}
+			val = cJSON_GetObjectItem(data, "chemical_id");
+			if (val) bms_data_ptr->chemical_id = (uint16_t)val->valueint;
 
-			//// ===============================================
-			//// Lifetime.
-			//// ===============================================
-			//cJSON* lifetime_obj = cJSON_GetObjectItem(data, "Lifetime");
-			//if (cJSON_IsObject(lifetime_obj))
-			//{
-			//	cJSON* max_v_array = cJSON_GetObjectItem(lifetime_obj, "MaxCellVoltages");
-			//	if (cJSON_IsArray(max_v_array)) {
-			//		int count = cJSON_GetArraySize(max_v_array);
-			//		for (int j = 0; j < count && j < 15; ++j) {
-			//			bms_data_ptr->lifetime_max_cell_v[j] = (uint16_t)cJSON_GetArrayItem(max_v_array, j)->valueint;
-			//		}
-			//	}
+			// ===============================================
+			// Configuration and Lifetime Data.
+			// ===============================================
 
-			//	cJSON* min_v_array = cJSON_GetObjectItem(lifetime_obj, "MinCellVoltages");
-			//	if (cJSON_IsArray(min_v_array)) {
-			//		int count = cJSON_GetArraySize(min_v_array);
-			//		for (int j = 0; j < count && j < 15; ++j) {
-			//			bms_data_ptr->lifetime_min_cell_v[j] = (uint16_t)cJSON_GetArrayItem(min_v_array, j)->valueint;
-			//		}
-			//	}
+			val = cJSON_GetObjectItem(data, "cov_threshold");
+			if (val) bms_data_ptr->cov_threshold = (uint16_t)val->valueint;
 
-			//	val = cJSON_GetObjectItem(lifetime_obj, "CovEventsCount");
-			//	if (val) bms_data_ptr->lifetime_cov_events_count = (uint16_t)val->valueint;
+			val = cJSON_GetObjectItem(data, "cuv_threshold");
+			if (val) bms_data_ptr->cuv_threshold = (uint16_t)val->valueint;
 
-			//	val = cJSON_GetObjectItem(lifetime_obj, "CuvEventsCount");
-			//	if (val) bms_data_ptr->lifetime_cuv_events_count = (uint16_t)val->valueint;
-			//}
+			val = cJSON_GetObjectItem(data, "ocd_threshold");
+			if (val) bms_data_ptr->ocd_threshold = (int16_t)val->valueint;
+
+			val = cJSON_GetObjectItem(data, "lifetime_cov_events_count");
+			if (val) bms_data_ptr->lifetime_cov_events_count = (uint16_t)val->valueint;
+
+			cJSON* lifetime_array = cJSON_GetObjectItem(data, "lifetime_max_cell_v");
+			if (cJSON_IsArray(lifetime_array)) {
+				int count = cJSON_GetArraySize(lifetime_array);
+				for (int j = 0; j < count && j < 15; ++j) {
+					cJSON* cell = cJSON_GetArrayItem(lifetime_array, j);
+					if (cell) bms_data_ptr->lifetime_max_cell_v[j] = (uint16_t)cell->valueint;
+				}
+			}
 
 			break;
 		}
@@ -315,7 +312,7 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 		return false;
 
 	cJSON* root = cJSON_CreateArray();
-	if (!root) return false; 
+	if (!root) return false;
 
 	for (int i = 0; i < count; ++i)
 	{
@@ -338,7 +335,7 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 		case DRIVER_RTC:
 
 			cJSON_AddStringToObject(item, "driver", "rtc");
-			cJSON_AddStringToObject(item, "event", "RTC_SET"); 
+			cJSON_AddStringToObject(item, "event", "RTC_SET");
 
 			cJSON_AddNumberToObject(data, "year", messages[i].data.rtc.year);
 			cJSON_AddNumberToObject(data, "month", messages[i].data.rtc.month);
@@ -360,7 +357,7 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 				return false;
 			}
 
-			for (int j = 0; j < messages[i].data.can.dlc && j < 8; ++j) 
+			for (int j = 0; j < messages[i].data.can.dlc && j < 8; ++j)
 			{
 				cJSON_AddItemToArray(can_array, cJSON_CreateNumber(messages[i].data.can.can_buffer[j]));
 			}
@@ -370,7 +367,7 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 		default:
 			cJSON_Delete(data);
 			cJSON_Delete(item);
-			continue; 
+			continue;
 		}
 
 		cJSON_AddItemToObject(item, "data", data);
@@ -388,11 +385,11 @@ bool processor_json(Message* messages, int count, char* buffer, size_t buffer_si
 	{
 		free(json_str);
 		cJSON_Delete(root);
-		return false; 
+		return false;
 	}
 
 	strncpy(buffer, json_str, buffer_size - 1);
-	buffer[buffer_size - 1] = '\0'; 
+	buffer[buffer_size - 1] = '\0';
 
 	free(json_str);
 	cJSON_Delete(root);

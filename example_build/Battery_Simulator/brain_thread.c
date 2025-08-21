@@ -240,7 +240,12 @@ void    thread_0_entry(ULONG thread_input)
 
 				bq78350r1_resp_t test;
 				bq78350r1_get_relsoc(&test);
-				printf("soc: %d", (int16_t)test.value);
+				printf("soc: %d\n", (int16_t)test.value);
+
+				bq78350r1_resp_t test2;
+				bq78350r1_get_chgstatus(&test2);
+				printf("Charging Status: %d\n", test2.valuep[0] | test2.valuep[1] << 8);
+
 			}
 			if (tmr_events.bits.time_100msec_event)
 			{
