@@ -641,15 +641,17 @@ bool bq78350r1_get_dastatus2(bq78350r1_resp_t* p_gauge_resp)
 
 	if (bms_message.driver == DRIVER_BMS)
 	{
-		p_gauge_resp->valuep[0] = 34;
-		p_gauge_resp->valuep[1] = 0;
-		p_gauge_resp->valuep[2] = 25;
-		p_gauge_resp->valuep[3] = 25;
-		p_gauge_resp->valuep[4] = 25;
-		p_gauge_resp->valuep[5] = 25;
-		p_gauge_resp->valuep[6] = 25;
-		p_gauge_resp->valuep[7] = 25;
-		p_gauge_resp->p_size = (uint8_t)8;
+		p_gauge_resp->valuep[0] = 0x04;
+		p_gauge_resp->valuep[1] = 0x01;
+		p_gauge_resp->valuep[2] = 0x04;
+		p_gauge_resp->valuep[3] = 0x01;
+		p_gauge_resp->valuep[4] = 0x04;
+		p_gauge_resp->valuep[5] = 0x01;
+		p_gauge_resp->valuep[6] = 0x04;
+		p_gauge_resp->valuep[7] = 0x01;
+		p_gauge_resp->valuep[8] = 0x04;
+		p_gauge_resp->valuep[9] = 0x01;
+		p_gauge_resp->p_size = (uint8_t)10;
 		p_gauge_resp->response = 1;
 
 		return true;
